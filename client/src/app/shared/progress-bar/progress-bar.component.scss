@@ -1,0 +1,144 @@
+@import '../../../assets/style/_var';
+
+:host {
+    width: min-content;
+    display: block;
+}
+
+.progress-bar {
+    width: 306px;
+    height: 11px;
+    background-color: $black_2;
+    padding: 3px;
+    border-radius: 3px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.progress {
+    width: 0px;
+    height: 2px;
+    border: dotted white 2px;
+    height: 2px;
+}
+
+.progress-bar-skill {
+    width: max-content;;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    perspective: 200px;
+}
+
+.progress-bar-skill__inner {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 1px;
+    transform-origin: top;
+    transform: rotateX(-100deg);
+    animation: skill .9s 3.5s 1 forwards cubic-bezier(0.82, -0.27, 0.33, 0.37);
+}
+
+.progress-html {
+    animation: progress-html 2.4s 1.5s 1 forwards cubic-bezier(0.58, 1.31, 0.84,-0.17);
+}
+
+.progress-css {
+    animation: progress-css 2.4s 1.5s 1 forwards cubic-bezier(0.58, 1.31, 0.84,-0.17);
+}
+
+.progress-js {
+    animation: progress-js 2.4s 1.5s 1 forwards cubic-bezier(0.58, 1.31, 0.84,-0.17);
+}
+
+.progress-angular {
+    animation: progress-angular 2.4s 1.5s 1 forwards cubic-bezier(0.58, 1.31, 0.84,-0.17);
+}
+
+.progress-node {
+    animation: progress-node 2.4s 1.5s 1 forwards cubic-bezier(0.58, 1.31, 0.84,-0.17);
+}
+
+.progress-photoshop {
+    animation: progress-photoshop 2.4s 1.5s 1 forwards cubic-bezier(0.58, 1.31, 0.84,-0.17);
+}
+
+.progress-illustrator {
+    animation: progress-illustrator 2.4s 1.5s 1 forwards cubic-bezier(0.58, 1.31, 0.84,-0.17);
+}
+
+
+@keyframes progress-html {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 250px;
+    }
+}
+
+@keyframes progress-css {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 220px;
+    }
+}
+
+@keyframes progress-js {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 180px;
+    }
+}
+
+@keyframes progress-angular {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 140px;
+    }
+}
+
+@keyframes progress-node {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 120px;
+    }
+}
+
+@keyframes progress-photoshop {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 160px;
+    }
+}
+
+
+@keyframes progress-illustrator {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 140px;
+    }
+}
+
+@keyframes skill {
+    0% {
+        transform: rotateX(-100deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
