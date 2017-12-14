@@ -8,6 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class NavComponent implements OnInit {
   public color: boolean;
+  public animate: boolean;
 
   constructor(private router: Router) {
       this.router.events.subscribe((val) => {
@@ -15,9 +16,15 @@ export class NavComponent implements OnInit {
           switch (val.url) {
             case '/skills':
               this.color = true;
+              this.animate = false;
+              break;
+            case '/portfolio':
+              this.color = true;
+              this.animate = false;
               break;
             case '/home':
               this.color = false;
+              this.animate = true;
               break;
           }
         }
@@ -31,7 +38,6 @@ export class NavComponent implements OnInit {
 
   goTo(path) {
     this.router.navigate([path]);
-    console.log(this.color);
   }
 
 }

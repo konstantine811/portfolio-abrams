@@ -291,7 +291,7 @@ var HomeModule = (function () {
 /***/ "../../../../../src/app/portfolio/portfolio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  portfolio works!\n</p>\n"
+module.exports = "<app-nav></app-nav>"
 
 /***/ }),
 
@@ -357,6 +357,7 @@ var PortfolioComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__portfolio_component__ = __webpack_require__("../../../../../src/app/portfolio/portfolio.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_shared_module__ = __webpack_require__("../../../../../src/app/shared/shared.module.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -366,13 +367,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var PortfolioModule = (function () {
     function PortfolioModule() {
     }
     PortfolioModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_3__shared_shared_module__["a" /* SharedModule */]
             ],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__portfolio_component__["a" /* PortfolioComponent */]]
         })
@@ -387,7 +390,7 @@ var PortfolioModule = (function () {
 /***/ "../../../../../src/app/shared/nav/nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navigation\">\n    <div class=\"navigation__wrap\" [class.navigation__wrap--black]='color'>\n        <button (click)=\"goTo('./home')\" class=\"navigation__link\">Home</button>\n        <button (click)=\"goTo('./skills')\" class=\"navigation__link\">Skills</button>\n        <button (click)=\"goTo('./portfolio')\" class=\"navigation__link\">Portfolio</button>\n     </div> \n </nav>"
+module.exports = "<nav class=\"navigation\">\n    <div class=\"navigation__wrap\" [class.navigation__wrap--black]='color'>\n        <button (click)=\"goTo('./home')\" class=\"navigation__link\" [class.navigation__link--animate]=\"animate\">Home</button>\n        <button (click)=\"goTo('./skills')\" class=\"navigation__link\" [class.navigation__link--animate]=\"animate\">Skills</button>\n        <button (click)=\"goTo('./portfolio')\" class=\"navigation__link\" [class.navigation__link--animate]=\"animate\">Portfolio</button>\n     </div> \n </nav>"
 
 /***/ }),
 
@@ -399,7 +402,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".navigation {\n  margin-top: 0;\n  margin-right: 200px;\n  height: 100px;\n  overflow: hidden; }\n\n.navigation__wrap {\n  display: inline-block;\n  height: 200px;\n  position: relative;\n  top: 30px; }\n\n.navigation__wrap--black .navigation__link {\n  color: #1e1d1e; }\n  .navigation__wrap--black .navigation__link:hover {\n    box-shadow: 0px 1px 13px -4px #1e1d1e; }\n\n.navigation__link {\n  color: #ffffff;\n  font-family: 'Advent Pro', sans;\n  text-decoration: none;\n  font-weight: 400;\n  font-size: 14px;\n  display: inline-block;\n  background: transparent;\n  border: none;\n  outline: none;\n  padding: 0px 10px;\n  cursor: pointer;\n  transition: box-shadow 0.4s ease-in-out;\n  -webkit-transform: translate(0, -300px);\n          transform: translate(0, -300px); }\n  .navigation__link:nth-child(1) {\n    -webkit-animation: trans-txt 0.9s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 0.9s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation__link:nth-child(2) {\n    -webkit-animation: trans-txt 1.8s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 1.8s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation__link:nth-child(3) {\n    -webkit-animation: trans-txt 2.7s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 2.7s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation__link:hover {\n    box-shadow: 0px 1px 13px -4px #ffffff; }\n\n@-webkit-keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n", ""]);
+exports.push([module.i, ".navigation {\n  margin-top: 0;\n  margin-right: 200px;\n  height: 100px;\n  overflow: hidden; }\n\n.navigation__wrap {\n  display: inline-block;\n  height: 200px;\n  position: relative;\n  top: 30px; }\n\n.navigation__wrap--black .navigation__link {\n  color: #1e1d1e; }\n  .navigation__wrap--black .navigation__link:hover {\n    box-shadow: 0px 1px 13px -4px #1e1d1e; }\n\n.navigation__link {\n  color: #ffffff;\n  font-family: 'Advent Pro', sans;\n  text-decoration: none;\n  font-weight: 400;\n  font-size: 14px;\n  display: inline-block;\n  background: transparent;\n  border: none;\n  outline: none;\n  padding: 0px 10px;\n  cursor: pointer;\n  transition: box-shadow 0.4s ease-in-out; }\n  .navigation__link:hover {\n    box-shadow: 0px 1px 13px -4px #ffffff; }\n\n.navigation__link--animate {\n  -webkit-transform: translate(0, -300px);\n          transform: translate(0, -300px); }\n  .navigation__link--animate:nth-child(1) {\n    -webkit-animation: trans-txt 0.9s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 0.9s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation__link--animate:nth-child(2) {\n    -webkit-animation: trans-txt 1.8s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 1.8s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation__link--animate:nth-child(3) {\n    -webkit-animation: trans-txt 2.7s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 2.7s 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n@-webkit-keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n", ""]);
 
 // exports
 
@@ -436,9 +439,15 @@ var NavComponent = (function () {
                 switch (val.url) {
                     case '/skills':
                         _this.color = true;
+                        _this.animate = false;
+                        break;
+                    case '/portfolio':
+                        _this.color = true;
+                        _this.animate = false;
                         break;
                     case '/home':
                         _this.color = false;
+                        _this.animate = true;
                         break;
                 }
             }
@@ -448,7 +457,6 @@ var NavComponent = (function () {
     };
     NavComponent.prototype.goTo = function (path) {
         this.router.navigate([path]);
-        console.log(this.color);
     };
     NavComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
