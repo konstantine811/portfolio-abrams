@@ -7,3 +7,44 @@ body {
     margin: 0;
     font-family: 'Advent Pro', sans;
 }
+
+
+.on-animation-scorll {
+    transition: all 1s ease-in-out;
+    .on-scroll-text-black {
+      position: relative;
+      animation: on-scroll-black 1s cubic-bezier(0, 1, 0.8, 1);
+    }
+    .on-scroll-text-white {
+      animation: on-scroll-white 1s cubic-bezier(0, 1, 0.8, 1);
+    }
+  }
+  
+  @keyframes on-scroll-black {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 10%);
+      filter: drop-shadow(2px 20px 1px rgba(0,0,0, 1));
+    }
+    100% {
+      transform: translate(0, 0);
+      filter: drop-shadow(0px 0px 00px rgba(0,0,0,0));
+    }
+  }
+  
+  @keyframes on-scroll-white {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 5%);
+      filter: drop-shadow(2px 11px 1px rgba(255,255,255, 1));
+    }
+    100% {
+      transform: translate(0, 0);
+      filter: drop-shadow(0px 0px 00px rgba(255,255,255,0));
+    }
+  }
+      

@@ -1,0 +1,116 @@
+@import '../../../assets/style/_var';
+
+:host {
+    width: 100%;
+    height: 90%;
+    background-color: $black_2;
+    position: absolute;
+    transform: translate(-100%, 0);
+    top: 0;
+    right: 100%;
+    z-index: 99;
+    transition: height .6s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: content-link-black 3.5s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contacts-wrap {
+    opacity: 0;
+    animation: animation-link 2s 4s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-title {
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.link-wrap {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link-wrap__item {
+    list-style: none;
+    width: 100%;
+    display: block;
+    opacity: 0;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.link-wrap__item--first {
+    animation: animation-link 2s 5s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-wrap__item--second {
+    animation: animation-link 2s 5.5s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-wrap__item--third {
+    animation: animation-link 2s 6s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-wrap__inner {
+    text-decoration: none;
+    color: white;
+}
+
+.link-image__inner {
+    width: 29%;
+    background-color: white;
+    border: 2px solid silver;
+    border-radius: 24%;
+    transform: scale(0);
+}
+
+.link-image__inner--first {
+    animation: animation-image-link 0.4s 5.4s 1 forwards cubic-bezier(0.9, 1, 0.2, 1);
+}
+
+.link-image__inner--second {
+    animation: animation-image-link 0.4s 6s 1 forwards cubic-bezier(0.9, 1, 0.2, 1);
+}
+.link-image__inner--third {
+    animation: animation-image-link 0.4s 6.6s 1 forwards cubic-bezier(0.9, 1, 0.2, 1);
+}
+
+.link-text {
+    font-size: 12px;
+}
+
+  //keyframes animation
+  @keyframes content-link-black {
+    0% {
+        transform: translate(-100%, 0);
+        right: 90%;
+    }
+    50% {
+        width: 80%;
+    }
+    100% {
+        right: 0;
+        width: 10%;
+        transform: translate(0%, 0%);
+    }
+  }
+
+  @keyframes animation-link {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+      
+  }
+
+  @keyframes animation-image-link {
+      0% {
+          transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }

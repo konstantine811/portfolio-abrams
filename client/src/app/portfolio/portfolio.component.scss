@@ -1,0 +1,116 @@
+@import '../../assets/style/_var';
+
+:host {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    height: inherit;
+    flex-flow: column wrap;
+}
+
+.row {
+    width: 100%;
+}
+
+.row-right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+.container-portfolio {
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-portfolio__wrap {
+    display: flex;
+    padding: 0 103px 0px 0px;
+    margin: 0 auto;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.portfolio-item {
+    padding: 10px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1000;
+    transform: translate(0%, -100%);
+    &:hover {
+        .page-link {
+            animation: animation-page-link 0.3s 1 forwards cubic-bezier(1,-0.06, 0, 0.94);
+        }
+    }
+    @for $i from 1 through 2 {
+        &:nth-child(#{$i}) {
+            animation: animation-portfolio-item .9s * $i*1.5 1 forwards cubic-bezier(0,-0.06, 0, 0.94);
+        }
+    }
+}
+
+.item-wrap {
+    width: 300px;
+    height: 100%;
+    position: relative;
+    border: solid 2px $black_1;
+    transition: all 0.3s ease-in;
+    &:hover {
+        box-shadow: 10px 10px 3px -3px $black_1;
+        transform: translate(-2px, -4px);
+    }
+}
+
+.portfolio-item__image {
+    width: 100%;
+    height: 100%;
+}
+
+.page-link {
+    position: absolute;
+    top: 181px;
+    width: 127px;
+    height: 36px;
+    background-color: black;
+    transform: translate(-200%, 0);
+}
+
+a.page-link__inner {
+    text-decoration: none;
+    color: $white;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    padding-top: 4px;
+    transition: text-shadow 0.2s ease-in;
+    &:hover {
+        text-shadow: 5px 5px 2px $white;
+    }
+}
+
+@keyframes animation-page-link {
+    0% {
+        transform: translate(-200%, 0);
+    }
+    100% {
+        transform: translate(-1%, 0);
+    }
+}
+
+@keyframes animation-portfolio-item {
+    0% {
+        transform: translate(0%, -100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}

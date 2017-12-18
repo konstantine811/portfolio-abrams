@@ -1,4 +1,68 @@
+@import '../../assets/style/_var';
+
 :host {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.on-animation-scorll {
+    transition: all 1s ease-in-out;
+    .on-scroll-text-black {
+      position: relative;
+      animation: on-scroll-black 1s cubic-bezier(0, 1, 0.8, 1);
+    }
+    .on-scroll-text-white {
+      animation: on-scroll-white 1s cubic-bezier(0, 1, 0.8, 1);
+    }
+  }
+
+.container {
     display: flex;
     justify-content: space-between;
+    width: inherit;
+    height: inherit;
+    flex-flow: column wrap;
 }
+
+.row {
+    width: 50%;
+    z-index: 100;
+}
+
+.skills-txt__inner {
+    text-align: left;
+    width: 80%;
+    margin-top: 13%;
+    color: $white;
+    z-index: 10;
+    position: relative;
+    right: 80px;
+}
+
+.skills-black-box {
+    position: absolute;
+    z-index: 1;
+    right: 51vw;
+    top: 87px;
+}
+.skills-blakc-box__inner {
+    width: 0;
+    height: 400px;
+    background-color: $black_1;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 4px 8px 23px 0px $black_1;
+    animation: animation-black-skills 2.5s 4s 1 forwards cubic-bezier(0.74, 0.34, 0, 1.16);
+}
+
+
+//keyframes animation
+@keyframes animation-black-skills {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 42vw;
+    }
+} 
