@@ -8,6 +8,25 @@ body {
     font-family: 'Advent Pro', sans;
 }
 
+.container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+.column {
+  width: 50%;
+  z-index: 100;
+}
 
 .on-animation-scorll {
     transition: all 1s ease-in-out;

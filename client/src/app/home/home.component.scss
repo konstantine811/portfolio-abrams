@@ -1,7 +1,7 @@
 @import '../../assets/style/_var';
-@media only screen and (max-height: $breakpoint-lapthop-height) {
-  @import './home.component.laptop' 
-}
+@import './home.component.responsive';
+
+
 :host {
   position: fixed;
   width: inherit;
@@ -24,7 +24,9 @@
 
 //header txt
 .content-header-txt {
-  width: 100%;
+  width: 232px;
+  position: absolute;
+  z-index: 100;
 }
 .content-header-txt__inner {
   display: inline-block;
@@ -59,8 +61,8 @@
 
 .about-txt__inner {
     color: $white;
-    margin-left: 115px;
-    max-width: 300px;
+    width: 50%;
+    margin-left: 19%;
     transform: translate(0, -150%);
     opacity: 0;
     animation: content-txt 1.4s 5.5s 1 forwards cubic-bezier(0, 1, 0.8, 1);
@@ -70,19 +72,12 @@
   height: 60%;
   width: 100%;
   background-color: $black_2;
-  display: flex;
-  justify-content: space-between;
   z-index: 100;
-  transform: translate(-350%, 0);
+  transform: translate(-250%, 0);
 }
 
 .content-animation {
-  animation: content-black 2.9s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.content-header__about-txt {
-  padding-top: 100px;
+  animation: content-black 3s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 //content bottom
@@ -146,10 +141,10 @@
 }
 @keyframes content-black {
   0% {
-      transform: translate(-350%, 0);
+      transform: translate(-250%, 0);
   }
   50% {
-      transform: translate(-180%, 0);
+      transform: translate(-90%, 0);
   }
   74% {
       transform: translate(-7%, 0);

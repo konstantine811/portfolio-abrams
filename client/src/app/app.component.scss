@@ -1,7 +1,6 @@
 @import '../assets/style/_var';
-@media only screen and (max-height: $breakpoint-lapthop-height) {
-  @import '../assets/style/responsive/_laptop' 
-}
+@import '../assets/style/responsive/_responsive';
+
 
 .container-box {
   width: 100%;
@@ -32,6 +31,8 @@
   box-shadow: 1px 10px 69px 5px rgba(0,0,0, 0.5);
   overflow: hidden;
 }
+
+
  
 
   

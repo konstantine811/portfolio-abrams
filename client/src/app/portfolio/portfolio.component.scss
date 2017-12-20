@@ -6,18 +6,6 @@
     height: 100%;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: inherit;
-    height: inherit;
-    flex-flow: column wrap;
-}
-
-.row {
-    width: 100%;
-}
-
 .row-right {
     position: absolute;
     right: 0;
@@ -44,6 +32,7 @@
     cursor: pointer;
     overflow: hidden;
     z-index: 1000;
+    opacity: 0;
     transform: translate(0%, -100%);
     &:hover {
         .page-link {
@@ -102,15 +91,20 @@ a.page-link__inner {
         transform: translate(-200%, 0);
     }
     100% {
-        transform: translate(-1%, 0);
+        transform: translate(-9%, 0);
     }
 }
 
 @keyframes animation-portfolio-item {
     0% {
+        opacity: 0;
         transform: translate(0%, -100%);
     }
+    50% {
+        opacity: 0;
+    }
     100% {
+        opacity: 1;
         transform: translate(0%, 0%);
     }
 }

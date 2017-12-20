@@ -1,0 +1,30 @@
+@import '../../assets/style/responsive/_responsive';
+
+@media only screen and (max-width: 1075px)  {
+    :host {
+        .about-txt__inner {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-width) {
+    :host {
+        .about-txt__inner {
+            width: 83%;
+            margin-left: 44px;
+        }
+
+        .content-image__inner {
+            max-height: 100%;
+        }
+    }
+}
+
+@media only screen and (max-height: 629px) {
+    :host {
+        .about-txt__inner {
+            width: 80%;
+        }
+    }
+} 

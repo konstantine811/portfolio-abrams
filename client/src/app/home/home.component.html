@@ -1,22 +1,26 @@
 <div class="container" scroll-attr>
-    <div class="container-flex">
-        <div class="content-header-txt on-scroll-text-white">
-            <h4 class="content-header-txt__inner" [class.content-header-txt__inner-animate]="fadeInAnimation">Abrams Constantine</h4>
-            <p class="content-header-txt__inner-about" [class.content-header-txt__inner-animate]="fadeInAnimation">Web developer</p>
-        </div>
+    <div class="content-header-txt on-scroll-text-white">
+        <h4 class="content-header-txt__inner" [class.content-header-txt__inner-animate]="fadeInAnimation">Abrams Constantine</h4>
+        <p class="content-header-txt__inner-about" [class.content-header-txt__inner-animate]="fadeInAnimation">Web developer</p>
     </div>
     <div class="content-header" [class.content-animation]="fadeInAnimation">
-        <div class="content-header__about-txt">
-          <div class="about-txt on-scroll-text-white">
-            <p class="about-txt__inner">
-              I′m 27 years old, and was born in Ukraine. I love programming, design and like discover all of modern and 
-              creative fields such as: HTML5, CSS3, JavaScript, Angular, NodeJs, graphic design, 3d designing, web design, etc. Now, 
-              I′m working as a Frontend Developer and with me, programming was become a part of my life. I always 
-              strive to create unique, qualitatively designed and supported web-pages for our clients.
-            </p>
-          </div>  
+        <div class="row">
+            <app-nav></app-nav>
         </div>
-        <app-nav></app-nav>
+        <div class="row">
+            <div class="column column-tablet-12">
+                <div class="content-header__about-txt">
+                    <div class="about-txt on-scroll-text-white">
+                        <p class="about-txt__inner">
+                        I′m 27 years old, and was born in Ukraine. I love programming, design and like discover all of modern and 
+                        creative fields such as: HTML5, CSS3, JavaScript, Angular, NodeJs, graphic design, 3d designing, web design, etc. Now, 
+                        I′m working as a Frontend Developer and with me, programming was become a part of my life. I always 
+                        strive to create unique, qualitatively designed and supported web-pages for our clients.
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </div>  
     </div>
     <app-social-link></app-social-link>
     <div class="content-bottom">

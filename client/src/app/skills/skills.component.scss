@@ -1,4 +1,5 @@
 @import '../../assets/style/_var';
+@import '../../assets/style/responsive/_responsive';
 
 :host {
     display: block;
@@ -6,38 +7,15 @@
     height: 100%;
 }
 
-.on-animation-scorll {
-    transition: all 1s ease-in-out;
-    .on-scroll-text-black {
-      position: relative;
-      animation: on-scroll-black 1s cubic-bezier(0, 1, 0.8, 1);
-    }
-    .on-scroll-text-white {
-      animation: on-scroll-white 1s cubic-bezier(0, 1, 0.8, 1);
-    }
-  }
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: inherit;
-    height: inherit;
-    flex-flow: column wrap;
-}
-
-.row {
-    width: 50%;
-    z-index: 100;
-}
-
 .skills-txt__inner {
     text-align: left;
     width: 80%;
-    margin-top: 13%;
+    max-width: 500px;
+    margin-top: 84px;
     color: $white;
     z-index: 10;
     position: relative;
-    right: 80px;
+    right: 6.7vw;
 }
 
 .skills-black-box {
@@ -46,9 +24,10 @@
     right: 51vw;
     top: 87px;
 }
-.skills-blakc-box__inner {
+.skills-black-box__inner {
     width: 0;
     height: 400px;
+    max-width: 669px;
     background-color: $black_1;
     position: absolute;
     border-radius: 8px;

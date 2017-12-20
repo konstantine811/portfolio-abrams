@@ -1,5 +1,11 @@
 @import '../../../assets/style/_var';
+@import '../../../assets/style/responsive/_responsive';
 
+:host {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 .navigation {
     margin-top: 0;
     margin-right: 200px;

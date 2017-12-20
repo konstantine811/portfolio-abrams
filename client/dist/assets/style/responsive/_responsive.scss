@@ -1,0 +1,25 @@
+@media only screen and (max-height: $breakpoint-lapthop-height)  {
+    :host {
+        .container-box__content {
+            width: 90vw;
+            height: 90vh;
+            top: 5vh;
+            left: 5vw 
+        }
+        .skills-black-box {
+            right: 55vw;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-width) {
+    :host {
+        .column-tablet-12 {
+            width: 100%;
+        }
+
+        .navigation {
+            margin-right: 50px;
+        }
+    }
+}
