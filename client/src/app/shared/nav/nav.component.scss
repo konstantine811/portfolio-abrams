@@ -58,7 +58,7 @@
     transform: translate(0, -300px);
     @for $i from 1 through 3 {
         &:nth-child(#{$i}) {
-            animation: trans-txt .9s * $i 2.9s 1 forwards cubic-bezier(0, 1, 0.8, 1);
+            animation: trans-txt 1.9s * $i*0.6 3.3s 1 forwards cubic-bezier(0, 1, 0.8, 1);
         }
     }
 }
