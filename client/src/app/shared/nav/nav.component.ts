@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class NavComponent implements OnInit {
   public color: boolean;
   public animate: boolean;
+  public opacity: boolean;
 
   constructor(private router: Router) {
       this.router.events.subscribe((val) => {
@@ -17,14 +18,19 @@ export class NavComponent implements OnInit {
             case '/skills':
               this.color = true;
               this.animate = false;
+              this.opacity = false;
               break;
             case '/portfolio':
               this.color = true;
               this.animate = false;
+              this.opacity = false;
               break;
             case '/home':
               this.color = false;
-              this.animate = true;
+              this.opacity = true;
+              setTimeout(() => {
+                this.animate = true;
+              }, 3300);
               break;
           }
         }

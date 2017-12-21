@@ -1,7 +1,7 @@
 <nav class="navigation">
     <div class="navigation__wrap" [class.navigation__wrap--black]='color'>
-        <button [routerLink]="['/home']"  [routerLinkActive]="['is-active']"  class="navigation__link" [class.navigation__link--animate]="animate">Home</button>
-        <button [routerLink]="['/skills']" [routerLinkActive]="['is-active']"  class="navigation__link" [class.navigation__link--animate]="animate">Skills</button>
-        <button [routerLink]="['/portfolio']" [routerLinkActive]="['is-active']"   class="navigation__link" [class.navigation__link--animate]="animate">Portfolio</button>
+        <button [routerLink]="['/home']"  [routerLinkActive]="['is-active']"  class="navigation__link" [class.no-opacity]="opacity" [class.navigation__link--animate]="animate">Home</button>
+        <button [routerLink]="['/skills']" [routerLinkActive]="['is-active']"  class="navigation__link" [class.no-opacity]="opacity" [class.navigation__link--animate]="animate">Skills</button>
+        <button [routerLink]="['/portfolio']" [routerLinkActive]="['is-active']"   class="navigation__link" [class.no-opacity]="opacity" [class.navigation__link--animate]="animate">Portfolio</button>
      </div> 
  </nav>
