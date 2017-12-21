@@ -634,26 +634,25 @@ var NavComponent = (function () {
                 switch (val.url) {
                     case '/skills':
                         _this.color = true;
-                        _this.animate = false;
-                        _this.opacity = false;
                         break;
                     case '/portfolio':
                         _this.color = true;
-                        _this.animate = false;
-                        _this.opacity = false;
                         break;
                     case '/home':
                         _this.color = false;
-                        _this.opacity = true;
-                        setTimeout(function () {
-                            _this.animate = true;
-                        }, 3300);
                         break;
                 }
             }
         });
     }
     NavComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.opacity = true;
+        setTimeout(function () {
+            _this.animate = true;
+        }, 3300);
+    };
+    NavComponent.prototype.ngAfterViewInit = function () {
     };
     NavComponent.prototype.goTo = function (path) {
         this.router.navigate([path]);

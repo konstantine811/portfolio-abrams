@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent implements OnInit {
+export class NavComponent implements OnInit, AfterViewInit {
   public color: boolean;
   public animate: boolean;
   public opacity: boolean = true;
@@ -17,20 +17,12 @@ export class NavComponent implements OnInit {
           switch (val.url) {
             case '/skills':
               this.color = true;
-              this.animate = false;
-              this.opacity = false;
               break;
             case '/portfolio':
               this.color = true;
-              this.animate = false;
-              this.opacity = false;
               break;
             case '/home':
               this.color = false;
-              this.opacity = true;
-              setTimeout(() => {
-                this.animate = true;
-              }, 3300);
               break;
           }
         }
@@ -39,7 +31,14 @@ export class NavComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.opacity = true;
+    setTimeout(() => {
+      this.animate = true;
+    }, 3300);
     
+  }
+  ngAfterViewInit() {
+
   }
 
   goTo(path) {
