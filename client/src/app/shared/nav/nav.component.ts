@@ -9,7 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class NavComponent implements OnInit {
   public color: boolean;
   public animate: boolean;
-  public opacity: boolean;
+  public opacity: boolean = true;
 
   constructor(private router: Router) {
       this.router.events.subscribe((val) => {

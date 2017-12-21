@@ -628,6 +628,7 @@ var NavComponent = (function () {
     function NavComponent(router) {
         var _this = this;
         this.router = router;
+        this.opacity = true;
         this.router.events.subscribe(function (val) {
             if (val instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* NavigationEnd */]) {
                 switch (val.url) {
