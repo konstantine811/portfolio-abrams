@@ -638,7 +638,7 @@ var PortfolioModule = (function () {
 /***/ "../../../../../src/app/shared/nav/nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav *ngIf='desktop' class=\"navigation navigation-desktop\">\n    <div class=\"navigation-desktop__wrap\" [class.navigation-desktop__wrap--black]='color'>\n        <button [routerLink]=\"['/home']\"  [routerLinkActive]=\"['is-active']\"  class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Home</button>\n        <button [routerLink]=\"['/skills']\" [routerLinkActive]=\"['is-active']\"  class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Skills</button>\n        <button [routerLink]=\"['/portfolio']\" [routerLinkActive]=\"['is-active']\"   class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Portfolio</button>\n     </div> \n </nav>\n <nav *ngIf='!desktop' class=\"navigation navigation-mobile\">\n    <div class=\"navigation-mobile__wrap\" [class.navigation-desktop__wrap--black]='color'>\n        <button [routerLink]=\"['/home']\"  [routerLinkActive]=\"['is-active-mobile']\"  class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-home\"></span>Home\n            </div>\n        </button>\n        <button [routerLink]=\"['/skills']\" [routerLinkActive]=\"['is-active-mobile']\"  class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-skills\"></span> Skills\n            </div>\n        </button>\n        <button [routerLink]=\"['/portfolio']\" [routerLinkActive]=\"['is-active-mobile']\"   class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-portfolio\"></span> Portfolio\n            </div>\n        </button>\n    </div> \n</nav>"
+module.exports = "<nav *ngIf='desktop' class=\"navigation navigation-desktop\">\n    <div class=\"navigation-desktop__wrap\" [class.navigation-desktop__wrap--black]='colorNav'>\n        <button [routerLink]=\"['/home']\"  [routerLinkActive]=\"['is-active']\"  class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Home</button>\n        <button [routerLink]=\"['/skills']\" [routerLinkActive]=\"['is-active']\"  class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Skills</button>\n        <button [routerLink]=\"['/portfolio']\" [routerLinkActive]=\"['is-active']\"   class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Portfolio</button>\n     </div> \n </nav>\n <nav *ngIf='!desktop' class=\"navigation navigation-mobile\">\n    <div class=\"navigation-mobile__wrap\" [class.navigation-desktop__wrap--black]='color'>\n        <button [routerLink]=\"['/home']\"  [routerLinkActive]=\"['is-active-mobile']\"  class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-home\"></span>Home\n            </div>\n        </button>\n        <button [routerLink]=\"['/skills']\" [routerLinkActive]=\"['is-active-mobile']\"  class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-skills\"></span> Skills\n            </div>\n        </button>\n        <button [routerLink]=\"['/portfolio']\" [routerLinkActive]=\"['is-active-mobile']\"   class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-portfolio\"></span> Portfolio\n            </div>\n        </button>\n    </div> \n</nav>"
 
 /***/ }),
 
@@ -650,7 +650,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation-desktop {\n    margin-right: 50px; } }\n\n:host {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.navigation-desktop {\n  margin-top: 0;\n  margin-right: 200px;\n  height: 100px;\n  overflow: hidden; }\n\n.navigation-desktop__wrap {\n  display: inline-block;\n  height: 200px;\n  position: relative;\n  top: 30px;\n  width: 100%;\n  min-width: 225px;\n  text-align: center; }\n\n.navigation-desktop__wrap--black .navigation__link {\n  color: #1e1d1e; }\n  .navigation-desktop__wrap--black .navigation__link:hover {\n    box-shadow: 0px 1px 13px 2px #1e1d1e;\n    color: #ffffff;\n    background-color: rgba(30, 29, 30, 0.9); }\n\n.navigation-desktop__wrap--black .is-active {\n  border-bottom: 1px solid #1e1d1e !important; }\n\n.navigation__link {\n  color: #ffffff;\n  font-family: 'Advent Pro', sans;\n  text-decoration: none;\n  font-weight: 400;\n  font-size: 14px;\n  display: inline-block;\n  background: transparent;\n  border: none;\n  outline: none;\n  cursor: pointer; }\n\n.navigation-desktop__link {\n  padding: 0px 10px;\n  transition: all 0.4s ease-in-out; }\n  .navigation-desktop__link:hover {\n    box-shadow: 0px 1px 13px -4px #ffffff; }\n\n.navigation-desktop__link--animate {\n  -webkit-transform: translate(0, -300px);\n          transform: translate(0, -300px); }\n  .navigation-desktop__link--animate:nth-child(1) {\n    -webkit-animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-desktop__link--animate:nth-child(2) {\n    -webkit-animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-desktop__link--animate:nth-child(3) {\n    -webkit-animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.no-opacity {\n  opacity: 0; }\n\n.navigation-mobile__link {\n  width: 100%;\n  margin-bottom: 20px;\n  opacity: 0; }\n  .navigation-mobile__link:nth-child(1) {\n    -webkit-animation: opacity-txt 3.8s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 3.8s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-mobile__link:nth-child(2) {\n    -webkit-animation: opacity-txt 7.6s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 7.6s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-mobile__link:nth-child(3) {\n    -webkit-animation: opacity-txt 11.4s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 11.4s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n[class^=\"icon-\"]:before, [class*=\" icon-\"]:before {\n  display: block;\n  font-size: 24px; }\n\n.content-button {\n  width: 100%; }\n\n.is-active-mobile .content-button {\n  width: 100%;\n  box-shadow: 3px 3px 2px -1px #941717; }\n\n@-webkit-keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@-webkit-keyframes opacity-txt {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes opacity-txt {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n", ""]);
+exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation-desktop {\n    margin-right: 50px; } }\n\n:host {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.navigation-desktop {\n  margin-top: 0;\n  margin-right: 200px;\n  height: 100px;\n  overflow: hidden; }\n\n.navigation-desktop__wrap {\n  display: inline-block;\n  height: 200px;\n  position: relative;\n  top: 30px;\n  width: 100%;\n  min-width: 225px;\n  text-align: center; }\n\n.navigation-desktop__wrap--black .navigation-desktop__link {\n  color: #1e1d1e; }\n  .navigation-desktop__wrap--black .navigation-desktop__link:hover {\n    box-shadow: 0px 1px 13px 2px #1e1d1e;\n    color: #ffffff;\n    background-color: rgba(30, 29, 30, 0.9); }\n\n.navigation-desktop__wrap--black .is-active {\n  border-bottom: 1px solid #1e1d1e !important; }\n\n.navigation__link {\n  color: #ffffff;\n  font-family: 'Advent Pro', sans;\n  text-decoration: none;\n  font-weight: 400;\n  font-size: 14px;\n  display: inline-block;\n  background: transparent;\n  border: none;\n  outline: none;\n  cursor: pointer; }\n\n.navigation-desktop__link {\n  padding: 0px 10px;\n  transition: all 0.4s ease-in-out; }\n  .navigation-desktop__link:hover {\n    box-shadow: 0px 1px 13px -4px #ffffff; }\n\n.navigation-desktop__link--animate {\n  -webkit-transform: translate(0, -300px);\n          transform: translate(0, -300px); }\n  .navigation-desktop__link--animate:nth-child(1) {\n    -webkit-animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-desktop__link--animate:nth-child(2) {\n    -webkit-animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-desktop__link--animate:nth-child(3) {\n    -webkit-animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.no-opacity {\n  opacity: 0; }\n\n.navigation-mobile__link {\n  width: 100%;\n  margin-bottom: 20px;\n  opacity: 0; }\n  .navigation-mobile__link:nth-child(1) {\n    -webkit-animation: opacity-txt 3.8s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 3.8s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-mobile__link:nth-child(2) {\n    -webkit-animation: opacity-txt 7.6s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 7.6s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-mobile__link:nth-child(3) {\n    -webkit-animation: opacity-txt 11.4s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 11.4s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n[class^=\"icon-\"]:before, [class*=\" icon-\"]:before {\n  display: block;\n  font-size: 24px; }\n\n.content-button {\n  width: 100%; }\n\n.is-active-mobile .content-button {\n  width: 100%;\n  box-shadow: 3px 3px 2px -1px #941717; }\n\n@-webkit-keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@-webkit-keyframes opacity-txt {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes opacity-txt {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n", ""]);
 
 // exports
 
@@ -681,26 +681,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var NavComponent = (function () {
-    function NavComponent(router, deviceInfo) {
-        var _this = this;
-        this.router = router;
+    function NavComponent(deviceInfo, router) {
         this.deviceInfo = deviceInfo;
+        this.router = router;
         this.opacity = true;
-        this.router.events.subscribe(function (val) {
-            if (val instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* NavigationEnd */]) {
-                switch (val.url) {
-                    case '/skills':
-                        _this.color = true;
-                        break;
-                    case '/portfolio':
-                        _this.color = true;
-                        break;
-                    case '/home':
-                        _this.color = false;
-                        break;
-                }
-            }
-        });
     }
     NavComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -709,6 +693,28 @@ var NavComponent = (function () {
             _this.animate = true;
         }, 3300);
         this.desktop = this.deviceInfo.deviceDesktop();
+        this.router.events.subscribe(function (val) {
+            if (val instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* NavigationEnd */]) {
+                switch (val.url) {
+                    case '/skills':
+                        _this.colorNav = true;
+                        break;
+                    case '/portfolio':
+                        console.log('portfolio');
+                        _this.colorNav = true;
+                        break;
+                    case '/home':
+                        _this.colorNav = false;
+                        break;
+                }
+            }
+        });
+        if (this.router.url === '/home') {
+            this.colorNav = false;
+        }
+        else {
+            this.colorNav = true;
+        }
     };
     NavComponent.prototype.goTo = function (path) {
         this.router.navigate([path]);
@@ -719,7 +725,7 @@ var NavComponent = (function () {
             template: __webpack_require__("../../../../../src/app/shared/nav/nav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/shared/nav/nav.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_2__core_services_device_info_service__["a" /* DeviceInfoService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_device_info_service__["a" /* DeviceInfoService */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
     ], NavComponent);
     return NavComponent;
 }());

@@ -1,5 +1,5 @@
 <nav *ngIf='desktop' class="navigation navigation-desktop">
-    <div class="navigation-desktop__wrap" [class.navigation-desktop__wrap--black]='color'>
+    <div class="navigation-desktop__wrap" [class.navigation-desktop__wrap--black]='colorNav'>
         <button [routerLink]="['/home']"  [routerLinkActive]="['is-active']"  class="navigation__link navigation-desktop__link" [class.no-opacity]="opacity" [class.navigation-desktop__link--animate]="animate">Home</button>
         <button [routerLink]="['/skills']" [routerLinkActive]="['is-active']"  class="navigation__link navigation-desktop__link" [class.no-opacity]="opacity" [class.navigation-desktop__link--animate]="animate">Skills</button>
         <button [routerLink]="['/portfolio']" [routerLinkActive]="['is-active']"   class="navigation__link navigation-desktop__link" [class.no-opacity]="opacity" [class.navigation-desktop__link--animate]="animate">Portfolio</button>

@@ -8,28 +8,12 @@ import { DeviceInfoService } from '../../core/services/device-info.service';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  public color: boolean;
+  private colorNav: boolean;
   public animate: boolean;
   public opacity = true;
   public desktop: boolean;
 
-  constructor(private router: Router, private deviceInfo: DeviceInfoService) {
-      this.router.events.subscribe((val) => {
-        if (val instanceof NavigationEnd) {
-          switch (val.url) {
-            case '/skills':
-              this.color = true;
-              break;
-            case '/portfolio':
-              this.color = true;
-              break;
-            case '/home':
-              this.color = false;
-              break;
-          }
-        }
-    });
-   }
+  constructor(private deviceInfo: DeviceInfoService, private router: Router) { }
 
   ngOnInit() {
     this.opacity = true;
@@ -37,10 +21,30 @@ export class NavComponent implements OnInit {
       this.animate = true;
     }, 3300);
     this.desktop = this.deviceInfo.deviceDesktop();
+    this.router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        switch (val.url) {
+          case '/skills':
+            this.colorNav = true;
+            break;
+          case '/portfolio':
+            console.log('portfolio');
+            this.colorNav = true;
+            break;
+          case '/home':
+            this.colorNav = false;
+            break;
+        }
+      }
+    });
+    if (this.router.url === '/home') {
+      this.colorNav = false;
+    } else {
+      this.colorNav = true;
+    }
   }
 
   goTo(path) {
     this.router.navigate([path]);
   }
-
 }
