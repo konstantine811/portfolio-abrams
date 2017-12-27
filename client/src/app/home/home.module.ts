@@ -11,7 +11,7 @@ import { SharedCoreModule } from '../core/shared.core.module';
     SharedModule,
     SharedCoreModule
   ],
-  declarations: [ 
+  declarations: [
     HomeComponent
   ]
 })

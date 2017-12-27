@@ -75,7 +75,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation {\n    margin-right: 50px; } }\n\n.container-box {\n  width: 100%;\n  height: 100vh;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.container-box__white {\n  width: 30vw;\n  height: 100vh;\n  background-color: #ffffff; }\n\n.container-box__black {\n  width: 70vw;\n  height: 100vh;\n  background-color: #1e1d1e; }\n\n.container-box__content {\n  width: 80vw;\n  height: 80vh;\n  position: absolute;\n  top: 10vh;\n  left: 10vw;\n  background-color: #ffffff;\n  box-shadow: 1px 10px 69px 5px rgba(0, 0, 0, 0.5);\n  overflow: hidden; }\n", ""]);
+exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation-desktop {\n    margin-right: 50px; } }\n\n.container-box {\n  width: 100%;\n  height: 100vh;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.container-box__white {\n  width: 30vw;\n  height: 100vh;\n  background-color: #ffffff; }\n\n.container-box__black {\n  width: 70vw;\n  height: 100vh;\n  background-color: #1e1d1e; }\n\n.container-box__content {\n  width: 80vw;\n  height: 80vh;\n  position: absolute;\n  top: 10vh;\n  left: 10vw;\n  background-color: #ffffff;\n  box-shadow: 1px 10px 69px 5px rgba(0, 0, 0, 0.5);\n  overflow: hidden; }\n", ""]);
 
 // exports
 
@@ -97,6 +97,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var AppComponent = (function () {
     function AppComponent() {
@@ -106,7 +109,8 @@ var AppComponent = (function () {
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
-        })
+        }),
+        __metadata("design:paramtypes", [])
     ], AppComponent);
     return AppComponent;
 }());
@@ -124,12 +128,13 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_shared_core_module__ = __webpack_require__("../../../../../src/app/core/shared.core.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_shared_module__ = __webpack_require__("../../../../../src/app/shared/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_module__ = __webpack_require__("../../../../../src/app/home/home.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__skills_skills_module__ = __webpack_require__("../../../../../src/app/skills/skills.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__portfolio_portfolio_module__ = __webpack_require__("../../../../../src/app/portfolio/portfolio.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_device_detector__ = __webpack_require__("../../../../ng2-device-detector/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_shared_core_module__ = __webpack_require__("../../../../../src/app/core/shared.core.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__ = __webpack_require__("../../../../../src/app/shared/shared.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_module__ = __webpack_require__("../../../../../src/app/home/home.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__skills_skills_module__ = __webpack_require__("../../../../../src/app/skills/skills.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__portfolio_portfolio_module__ = __webpack_require__("../../../../../src/app/portfolio/portfolio.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -146,26 +151,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]
+                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* AppComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_5__shared_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_4__core_shared_core_module__["a" /* SharedCoreModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_6__home_home_module__["a" /* HomeModule */],
-                __WEBPACK_IMPORTED_MODULE_7__skills_skills_module__["a" /* SkillsModule */],
-                __WEBPACK_IMPORTED_MODULE_8__portfolio_portfolio_module__["a" /* PortfolioModule */]
+                __WEBPACK_IMPORTED_MODULE_5__core_shared_core_module__["a" /* SharedCoreModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_7__home_home_module__["a" /* HomeModule */],
+                __WEBPACK_IMPORTED_MODULE_8__skills_skills_module__["a" /* SkillsModule */],
+                __WEBPACK_IMPORTED_MODULE_9__portfolio_portfolio_module__["a" /* PortfolioModule */],
+                __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__["a" /* SharedModule */],
+                __WEBPACK_IMPORTED_MODULE_4_ng2_device_detector__["a" /* Ng2DeviceDetectorModule */].forRoot()
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -320,6 +327,42 @@ var PaAttrDirective = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/core/services/device-info.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeviceInfoService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_device_detector__ = __webpack_require__("../../../../ng2-device-detector/index.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DeviceInfoService = (function () {
+    function DeviceInfoService(deviceService) {
+        this.deviceService = deviceService;
+    }
+    DeviceInfoService.prototype.deviceDesktop = function () {
+        return this.deviceService.isDesktop();
+    };
+    DeviceInfoService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ng2_device_detector__["b" /* Ng2DeviceService */]])
+    ], DeviceInfoService);
+    return DeviceInfoService;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/core/shared.core.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -328,12 +371,14 @@ var PaAttrDirective = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_attr_directives__ = __webpack_require__("../../../../../src/app/core/directives/attr.directives.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_device_info_service__ = __webpack_require__("../../../../../src/app/core/services/device-info.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -355,6 +400,7 @@ var SharedCoreModule = (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__directives_attr_directives__["a" /* PaAttrDirective */]
             ],
+            providers: [__WEBPACK_IMPORTED_MODULE_3__services_device_info_service__["a" /* DeviceInfoService */]],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_2__directives_attr_directives__["a" /* PaAttrDirective */]
             ]
@@ -371,7 +417,7 @@ var SharedCoreModule = (function () {
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" scroll-attr>\n    <div class=\"content-header-txt on-scroll-text-white\">\n        <h4 class=\"content-header-txt__inner\" [class.content-header-txt__inner-animate]=\"fadeInAnimation\">Abrams Constantine</h4>\n        <p class=\"content-header-txt__inner-about\" [class.content-header-txt__inner-animate]=\"fadeInAnimation\">Web developer</p>\n    </div>\n    <div class=\"content-header\" [class.content-animation]=\"fadeInAnimation\">\n        <div class=\"row\">\n            <app-nav></app-nav>\n        </div>\n        <div class=\"row\">\n            <div class=\"column column-tablet-12\">\n                <div class=\"content-header__about-txt\">\n                    <div class=\"about-txt on-scroll-text-white\">\n                        <p class=\"about-txt__inner\">\n                        I′m 27 years old, and was born in Ukraine. I love programming, design and like discover all of modern and \n                        creative fields such as: HTML5, CSS3, JavaScript, Angular, NodeJs, graphic design, 3d designing, web design, etc. Now, \n                        I′m working as a Frontend Developer and with me, programming was become a part of my life. I always \n                        strive to create unique, qualitatively designed and supported web-pages for our clients.\n                        </p>\n                    </div>  \n                </div>\n            </div>\n        </div>  \n    </div>\n    <app-social-link></app-social-link>\n    <div class=\"content-bottom\">\n        <div class=\"content-bottom-txt\">\n            <div class=\"bottom-txt on-scroll-text-black\">\n                <p class=\"bottom-txt__inner bottom-txt__inner--first\">\n                        Full Stack Javascript\n                </p>\n            </div>\n           <div class=\"bottom-txt on-scroll-text-black\">\n                <p class=\"bottom-txt__inner bottom-txt__inner--second\">\n                        Developer\n                </p>\n           </div>\n        </div>\n        <div class=\"content-image\">\n            <img class=\"content-image__inner\" src=\"./assets/img/Abrams.png\" alt=\"\">\n        </div>    \n    </div> \n</div>"
+module.exports = "<div class=\"container\" scroll-attr>\n    <div class=\"content-header-txt on-scroll-text-white\">\n        <h4 class=\"content-header-txt__inner\" [class.content-header-txt__inner-animate]=\"fadeInAnimation\">Abrams Constantine</h4>\n        <p class=\"content-header-txt__inner-about\" [class.content-header-txt__inner-animate]=\"fadeInAnimation\">Web developer</p>\n    </div>\n    <div class=\"content-header\" [class.content-animation]=\"fadeInAnimation\">\n        <div class=\"row\">\n            <app-nav *ngIf='desktop'></app-nav>\n        </div>\n        <div class=\"row\">\n            <div class=\"column column-tablet-12\">\n                <div class=\"content-header__about-txt\">\n                    <div class=\"about-txt on-scroll-text-white\">\n                        <p class=\"about-txt__inner\">\n                        I′m 27 years old, and was born in Ukraine. I love programming, design and like discover all of modern and \n                        creative fields such as: HTML5, CSS3, JavaScript, Angular, NodeJs, graphic design, 3d designing, web design, etc. Now, \n                        I′m working as a Frontend Developer and with me, programming was become a part of my life. I always \n                        strive to create unique, qualitatively designed and supported web-pages for our clients.\n                        </p>\n                    </div>  \n                </div>\n            </div>\n        </div>  \n    </div>\n    <app-social-link></app-social-link>\n    <div class=\"content-bottom\">\n        <div class=\"content-bottom-txt\">\n            <div class=\"bottom-txt on-scroll-text-black\">\n                <p class=\"bottom-txt__inner bottom-txt__inner--first\">\n                        Full Stack Javascript\n                </p>\n            </div>\n           <div class=\"bottom-txt on-scroll-text-black\">\n                <p class=\"bottom-txt__inner bottom-txt__inner--second\">\n                        Developer\n                </p>\n           </div>\n        </div>\n        <div class=\"content-image\">\n            <img class=\"content-image__inner\" src=\"./assets/img/Abrams.png\" alt=\"\">\n        </div>    \n    </div> \n</div>"
 
 /***/ }),
 
@@ -383,7 +429,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation {\n    margin-right: 50px; } }\n\n@media only screen and (max-width: 1075px) {\n  :host .about-txt__inner {\n    width: 70%; } }\n\n@media only screen and (max-width: 992px) {\n  :host .about-txt__inner {\n    width: 83%;\n    margin-left: 44px; }\n  :host .content-image__inner {\n    max-height: 100%; } }\n\n@media only screen and (max-height: 629px) {\n  :host .about-txt__inner {\n    width: 80%; } }\n\n:host {\n  position: fixed;\n  width: inherit;\n  height: inherit;\n  overflow: hidden;\n  background-color: #ffffff; }\n\n.container {\n  width: 100%;\n  height: 100%; }\n\n.container-flex {\n  position: absolute;\n  top: 0;\n  width: auto;\n  z-index: 10; }\n\n.content-header-txt {\n  width: 232px;\n  position: absolute;\n  z-index: 100; }\n\n.content-header-txt__inner {\n  display: inline-block;\n  color: #1d1b1d;\n  font-size: 20px;\n  font-family: 'Advent Pro', sans;\n  font-weight: 600;\n  width: auto;\n  padding: 30px 40px 0;\n  margin: 0; }\n\n.content-header-txt__inner-about {\n  display: inline-block;\n  color: #1d1b1d;\n  font-size: 16px;\n  font-family: 'Advent Pro', sans;\n  font-weight: 300;\n  width: 100%;\n  padding: 0px 65px 0;\n  margin: 0; }\n\n.content-header-txt__inner-animate {\n  -webkit-animation: color-txt 1s 1.9s 1 forwards;\n          animation: color-txt 1s 1.9s 1 forwards; }\n\n.about-txt {\n  max-width: 100%;\n  overflow: hidden; }\n\n.about-txt__inner {\n  color: #ffffff;\n  width: 50%;\n  margin-left: 19%;\n  -webkit-transform: translate(0, -150%);\n          transform: translate(0, -150%);\n  opacity: 0;\n  -webkit-animation: content-txt 1.4s 5.5s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n          animation: content-txt 1.4s 5.5s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.content-header {\n  height: 60%;\n  width: 100%;\n  background-color: #1d1b1d;\n  z-index: 100;\n  -webkit-transform: translate(-250%, 0);\n          transform: translate(-250%, 0); }\n\n.content-animation {\n  -webkit-animation: content-black 3s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);\n          animation: content-black 3s 1 forwards cubic-bezier(0.4, 0, 0.2, 1); }\n\n.content-bottom {\n  height: 40%;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n\n.content-image {\n  width: 100%;\n  height: 100%; }\n\n.content-image__inner {\n  width: auto;\n  position: absolute;\n  bottom: 0;\n  right: 14%;\n  max-height: 66vh;\n  z-index: 1000; }\n\n.content-bottom-txt {\n  width: 100%;\n  height: 50%;\n  overflow: hidden;\n  margin-top: 7%; }\n\n.bottom-txt {\n  overflow: hidden;\n  height: 50px;\n  -webkit-perspective: 200px;\n          perspective: 200px; }\n\n.bottom-txt__inner {\n  text-align: center;\n  font-size: 35px;\n  margin: 0 auto;\n  -webkit-transform: translate(0, -250%) rotateX(-90deg);\n          transform: translate(0, -250%) rotateX(-90deg); }\n\n.bottom-txt__inner--first {\n  -webkit-animation: content-txt-bottom 1.5s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n          animation: content-txt-bottom 1.5s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.bottom-txt__inner--second {\n  -webkit-animation: content-txt-bottom 1.5s 5s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n          animation: content-txt-bottom 1.5s 5s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n@-webkit-keyframes color-txt {\n  0% {\n    color: #1d1b1d; }\n  100% {\n    color: #ffffff; } }\n\n@keyframes color-txt {\n  0% {\n    color: #1d1b1d; }\n  100% {\n    color: #ffffff; } }\n\n@-webkit-keyframes content-black {\n  0% {\n    -webkit-transform: translate(-250%, 0);\n            transform: translate(-250%, 0); }\n  50% {\n    -webkit-transform: translate(-90%, 0);\n            transform: translate(-90%, 0); }\n  74% {\n    -webkit-transform: translate(-7%, 0);\n            transform: translate(-7%, 0); }\n  100% {\n    -webkit-transform: translate(0%, 0%);\n            transform: translate(0%, 0%); } }\n\n@keyframes content-black {\n  0% {\n    -webkit-transform: translate(-250%, 0);\n            transform: translate(-250%, 0); }\n  50% {\n    -webkit-transform: translate(-90%, 0);\n            transform: translate(-90%, 0); }\n  74% {\n    -webkit-transform: translate(-7%, 0);\n            transform: translate(-7%, 0); }\n  100% {\n    -webkit-transform: translate(0%, 0%);\n            transform: translate(0%, 0%); } }\n\n@-webkit-keyframes content-txt {\n  0% {\n    -webkit-transform: translate(0, -150%);\n            transform: translate(0, -150%);\n    opacity: 0; }\n  45% {\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes content-txt {\n  0% {\n    -webkit-transform: translate(0, -150%);\n            transform: translate(0, -150%);\n    opacity: 0; }\n  45% {\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@-webkit-keyframes content-txt-bottom {\n  0% {\n    -webkit-transform: translate(0, -250%) rotateX(-90deg);\n            transform: translate(0, -250%) rotateX(-90deg); }\n  1% {\n    -webkit-transform: translate(0, -150%) rotateX(-90deg);\n            transform: translate(0, -150%) rotateX(-90deg); }\n  100% {\n    -webkit-transform: translate(0, 0) rotateX(0deg);\n            transform: translate(0, 0) rotateX(0deg); } }\n\n@keyframes content-txt-bottom {\n  0% {\n    -webkit-transform: translate(0, -250%) rotateX(-90deg);\n            transform: translate(0, -250%) rotateX(-90deg); }\n  1% {\n    -webkit-transform: translate(0, -150%) rotateX(-90deg);\n            transform: translate(0, -150%) rotateX(-90deg); }\n  100% {\n    -webkit-transform: translate(0, 0) rotateX(0deg);\n            transform: translate(0, 0) rotateX(0deg); } }\n", ""]);
+exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation-desktop {\n    margin-right: 50px; } }\n\n@media only screen and (max-width: 1075px) {\n  :host .about-txt__inner {\n    width: 70%; } }\n\n@media only screen and (max-width: 992px) {\n  :host .about-txt__inner {\n    width: 83%;\n    margin-left: 44px; }\n  :host .content-image__inner {\n    max-height: 100%; } }\n\n@media only screen and (max-height: 629px) {\n  :host .about-txt__inner {\n    width: 80%; } }\n\n:host {\n  position: fixed;\n  width: inherit;\n  height: inherit;\n  overflow: hidden;\n  background-color: #ffffff; }\n\n.container {\n  width: 100%;\n  height: 100%; }\n\n.container-flex {\n  position: absolute;\n  top: 0;\n  width: auto;\n  z-index: 10; }\n\n.content-header-txt {\n  width: 232px;\n  position: absolute;\n  z-index: 100; }\n\n.content-header-txt__inner {\n  display: inline-block;\n  color: #1d1b1d;\n  font-size: 20px;\n  font-family: 'Advent Pro', sans;\n  font-weight: 600;\n  width: auto;\n  padding: 30px 40px 0;\n  margin: 0; }\n\n.content-header-txt__inner-about {\n  display: inline-block;\n  color: #1d1b1d;\n  font-size: 16px;\n  font-family: 'Advent Pro', sans;\n  font-weight: 300;\n  width: 100%;\n  padding: 0px 65px 0;\n  margin: 0; }\n\n.content-header-txt__inner-animate {\n  -webkit-animation: color-txt 1s 1.9s 1 forwards;\n          animation: color-txt 1s 1.9s 1 forwards; }\n\n.about-txt {\n  max-width: 100%;\n  overflow: hidden; }\n\n.about-txt__inner {\n  color: #ffffff;\n  width: 50%;\n  margin-left: 19%;\n  -webkit-transform: translate(0, -150%);\n          transform: translate(0, -150%);\n  opacity: 0;\n  -webkit-animation: content-txt 1.4s 5.5s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n          animation: content-txt 1.4s 5.5s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.content-header {\n  height: 60%;\n  width: 100%;\n  background-color: #1d1b1d;\n  z-index: 100;\n  -webkit-transform: translate(-250%, 0);\n          transform: translate(-250%, 0); }\n\n.content-animation {\n  -webkit-animation: content-black 3s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);\n          animation: content-black 3s 1 forwards cubic-bezier(0.4, 0, 0.2, 1); }\n\n.content-bottom {\n  height: 40%;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n\n.content-image {\n  width: 100%;\n  height: 100%; }\n\n.content-image__inner {\n  width: auto;\n  position: absolute;\n  bottom: 0;\n  right: 14%;\n  max-height: 66vh;\n  z-index: 1000; }\n\n.content-bottom-txt {\n  width: 100%;\n  height: 50%;\n  overflow: hidden;\n  margin-top: 7%; }\n\n.bottom-txt {\n  overflow: hidden;\n  height: 50px;\n  -webkit-perspective: 200px;\n          perspective: 200px; }\n\n.bottom-txt__inner {\n  text-align: center;\n  font-size: 35px;\n  margin: 0 auto;\n  -webkit-transform: translate(0, -250%) rotateX(-90deg);\n          transform: translate(0, -250%) rotateX(-90deg); }\n\n.bottom-txt__inner--first {\n  -webkit-animation: content-txt-bottom 1.5s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n          animation: content-txt-bottom 1.5s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.bottom-txt__inner--second {\n  -webkit-animation: content-txt-bottom 1.5s 5s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n          animation: content-txt-bottom 1.5s 5s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n@-webkit-keyframes color-txt {\n  0% {\n    color: #1d1b1d; }\n  100% {\n    color: #ffffff; } }\n\n@keyframes color-txt {\n  0% {\n    color: #1d1b1d; }\n  100% {\n    color: #ffffff; } }\n\n@-webkit-keyframes content-black {\n  0% {\n    -webkit-transform: translate(-250%, 0);\n            transform: translate(-250%, 0); }\n  50% {\n    -webkit-transform: translate(-90%, 0);\n            transform: translate(-90%, 0); }\n  74% {\n    -webkit-transform: translate(-7%, 0);\n            transform: translate(-7%, 0); }\n  100% {\n    -webkit-transform: translate(0%, 0%);\n            transform: translate(0%, 0%); } }\n\n@keyframes content-black {\n  0% {\n    -webkit-transform: translate(-250%, 0);\n            transform: translate(-250%, 0); }\n  50% {\n    -webkit-transform: translate(-90%, 0);\n            transform: translate(-90%, 0); }\n  74% {\n    -webkit-transform: translate(-7%, 0);\n            transform: translate(-7%, 0); }\n  100% {\n    -webkit-transform: translate(0%, 0%);\n            transform: translate(0%, 0%); } }\n\n@-webkit-keyframes content-txt {\n  0% {\n    -webkit-transform: translate(0, -150%);\n            transform: translate(0, -150%);\n    opacity: 0; }\n  45% {\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes content-txt {\n  0% {\n    -webkit-transform: translate(0, -150%);\n            transform: translate(0, -150%);\n    opacity: 0; }\n  45% {\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@-webkit-keyframes content-txt-bottom {\n  0% {\n    -webkit-transform: translate(0, -250%) rotateX(-90deg);\n            transform: translate(0, -250%) rotateX(-90deg); }\n  1% {\n    -webkit-transform: translate(0, -150%) rotateX(-90deg);\n            transform: translate(0, -150%) rotateX(-90deg); }\n  100% {\n    -webkit-transform: translate(0, 0) rotateX(0deg);\n            transform: translate(0, 0) rotateX(0deg); } }\n\n@keyframes content-txt-bottom {\n  0% {\n    -webkit-transform: translate(0, -250%) rotateX(-90deg);\n            transform: translate(0, -250%) rotateX(-90deg); }\n  1% {\n    -webkit-transform: translate(0, -150%) rotateX(-90deg);\n            transform: translate(0, -150%) rotateX(-90deg); }\n  100% {\n    -webkit-transform: translate(0, 0) rotateX(0deg);\n            transform: translate(0, 0) rotateX(0deg); } }\n", ""]);
 
 // exports
 
@@ -399,6 +445,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__ = __webpack_require__("../../../../../src/app/core/services/device-info.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -409,8 +456,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(deviceInfo) {
+        this.deviceInfo = deviceInfo;
         this.fadeInAnimation = false;
     }
     HomeComponent.prototype.ngOnInit = function () {
@@ -418,6 +467,7 @@ var HomeComponent = (function () {
         setTimeout(function () {
             _this.fadeInAnimation = true;
         }, 500);
+        this.desktop = this.deviceInfo.deviceDesktop();
     };
     HomeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -425,7 +475,7 @@ var HomeComponent = (function () {
             template: __webpack_require__("../../../../../src/app/home/home.component.html"),
             styles: [__webpack_require__("../../../../../src/app/home/home.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__["a" /* DeviceInfoService */]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -480,7 +530,7 @@ var HomeModule = (function () {
 /***/ "../../../../../src/app/portfolio/portfolio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" scroll-attr>\r\n    <app-social-link></app-social-link>\r\n    <div class=\"row row-right\">\r\n        <app-nav></app-nav>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"container-portfolio\">\r\n            <ul class=\"container-portfolio__wrap\">\r\n                <li class=\"portfolio-item\">\r\n                    <div class=\"item-wrap\">\r\n                        <img src=\"./assets/img/portfolio/black-bird.png\" alt=\"\" class=\"portfolio-item__image\">\r\n                        <div class=\"page-link\">\r\n                            <a href=\"https://konstantine811.github.io/fashion/\" target=\"content\" class=\"page-link__inner\">link</a>\r\n                        </div>\r\n                    </div>\r\n                </li>\r\n                <li class=\"portfolio-item\">\r\n                    <div class=\"item-wrap\">\r\n                        <img src=\"./assets/img/portfolio/landing-portfolio.png\" alt=\"\" class=\"portfolio-item__image\">\r\n                        <div class=\"page-link\">\r\n                            <a href=\"https://konstantine811.github.io/abrams.github.io/\" target=\"content\" class=\"page-link__inner\">link</a>\r\n                        </div>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container\" scroll-attr>\r\n    <app-social-link></app-social-link>\r\n    <div class=\"row row-right\">\r\n        <app-nav *ngIf=\"device\"></app-nav>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"container-portfolio\">\r\n            <ul class=\"container-portfolio__wrap\">\r\n                <li class=\"portfolio-item\">\r\n                    <div class=\"item-wrap\">\r\n                        <img src=\"./assets/img/portfolio/black-bird.png\" alt=\"\" class=\"portfolio-item__image\">\r\n                        <div class=\"page-link\">\r\n                            <a href=\"https://konstantine811.github.io/fashion/\" target=\"content\" class=\"page-link__inner\">link</a>\r\n                        </div>\r\n                    </div>\r\n                </li>\r\n                <li class=\"portfolio-item\">\r\n                    <div class=\"item-wrap\">\r\n                        <img src=\"./assets/img/portfolio/landing-portfolio.png\" alt=\"\" class=\"portfolio-item__image\">\r\n                        <div class=\"page-link\">\r\n                            <a href=\"https://konstantine811.github.io/abrams.github.io/\" target=\"content\" class=\"page-link__inner\">link</a>\r\n                        </div>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -508,6 +558,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__ = __webpack_require__("../../../../../src/app/core/services/device-info.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -518,10 +569,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var PortfolioComponent = (function () {
-    function PortfolioComponent() {
+    function PortfolioComponent(deviceInfo) {
+        this.deviceInfo = deviceInfo;
     }
     PortfolioComponent.prototype.ngOnInit = function () {
+        this.device = this.deviceInfo.deviceDesktop();
     };
     PortfolioComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -529,7 +583,7 @@ var PortfolioComponent = (function () {
             template: __webpack_require__("../../../../../src/app/portfolio/portfolio.component.html"),
             styles: [__webpack_require__("../../../../../src/app/portfolio/portfolio.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__["a" /* DeviceInfoService */]])
     ], PortfolioComponent);
     return PortfolioComponent;
 }());
@@ -584,7 +638,7 @@ var PortfolioModule = (function () {
 /***/ "../../../../../src/app/shared/nav/nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navigation\">\n    <div class=\"navigation__wrap\" [class.navigation__wrap--black]='color'>\n        <button [routerLink]=\"['/home']\"  [routerLinkActive]=\"['is-active']\"  class=\"navigation__link\" [class.no-opacity]=\"opacity\" [class.navigation__link--animate]=\"animate\">Home</button>\n        <button [routerLink]=\"['/skills']\" [routerLinkActive]=\"['is-active']\"  class=\"navigation__link\" [class.no-opacity]=\"opacity\" [class.navigation__link--animate]=\"animate\">Skills</button>\n        <button [routerLink]=\"['/portfolio']\" [routerLinkActive]=\"['is-active']\"   class=\"navigation__link\" [class.no-opacity]=\"opacity\" [class.navigation__link--animate]=\"animate\">Portfolio</button>\n     </div> \n </nav>"
+module.exports = "<nav *ngIf='desktop' class=\"navigation navigation-desktop\">\n    <div class=\"navigation-desktop__wrap\" [class.navigation-desktop__wrap--black]='color'>\n        <button [routerLink]=\"['/home']\"  [routerLinkActive]=\"['is-active']\"  class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Home</button>\n        <button [routerLink]=\"['/skills']\" [routerLinkActive]=\"['is-active']\"  class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Skills</button>\n        <button [routerLink]=\"['/portfolio']\" [routerLinkActive]=\"['is-active']\"   class=\"navigation__link navigation-desktop__link\" [class.no-opacity]=\"opacity\" [class.navigation-desktop__link--animate]=\"animate\">Portfolio</button>\n     </div> \n </nav>\n <nav *ngIf='!desktop' class=\"navigation navigation-mobile\">\n    <div class=\"navigation-mobile__wrap\" [class.navigation-desktop__wrap--black]='color'>\n        <button [routerLink]=\"['/home']\"  [routerLinkActive]=\"['is-active-mobile']\"  class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-home\"></span>Home\n            </div>\n        </button>\n        <button [routerLink]=\"['/skills']\" [routerLinkActive]=\"['is-active-mobile']\"  class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-skills\"></span> Skills\n            </div>\n        </button>\n        <button [routerLink]=\"['/portfolio']\" [routerLinkActive]=\"['is-active-mobile']\"   class=\"navigation__link navigation-mobile__link\">\n            <div class=\"content-button\">\n                <span class=\"icon-portfolio\"></span> Portfolio\n            </div>\n        </button>\n    </div> \n</nav>"
 
 /***/ }),
 
@@ -596,7 +650,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation {\n    margin-right: 50px; } }\n\n:host {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.navigation {\n  margin-top: 0;\n  margin-right: 200px;\n  height: 100px;\n  overflow: hidden; }\n\n.navigation__wrap {\n  display: inline-block;\n  height: 200px;\n  position: relative;\n  top: 30px;\n  width: 100%;\n  min-width: 225px;\n  text-align: center; }\n\n.navigation__wrap--black .navigation__link {\n  color: #1e1d1e; }\n  .navigation__wrap--black .navigation__link:hover {\n    box-shadow: 0px 1px 13px 2px #1e1d1e;\n    color: #ffffff;\n    background-color: rgba(30, 29, 30, 0.9); }\n\n.navigation__wrap--black .is-active {\n  border-bottom: 1px solid #1e1d1e !important; }\n\n.navigation__link {\n  color: #ffffff;\n  font-family: 'Advent Pro', sans;\n  text-decoration: none;\n  font-weight: 400;\n  font-size: 14px;\n  display: inline-block;\n  background: transparent;\n  border: none;\n  outline: none;\n  padding: 0px 10px;\n  cursor: pointer;\n  transition: all 0.4s ease-in-out; }\n  .navigation__link:hover {\n    box-shadow: 0px 1px 13px -4px #ffffff; }\n\n.navigation__link--animate {\n  -webkit-transform: translate(0, -300px);\n          transform: translate(0, -300px); }\n  .navigation__link--animate:nth-child(1) {\n    -webkit-animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation__link--animate:nth-child(2) {\n    -webkit-animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation__link--animate:nth-child(3) {\n    -webkit-animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.no-opacity {\n  opacity: 0; }\n\n@-webkit-keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n", ""]);
+exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation-desktop {\n    margin-right: 50px; } }\n\n:host {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.navigation-desktop {\n  margin-top: 0;\n  margin-right: 200px;\n  height: 100px;\n  overflow: hidden; }\n\n.navigation-desktop__wrap {\n  display: inline-block;\n  height: 200px;\n  position: relative;\n  top: 30px;\n  width: 100%;\n  min-width: 225px;\n  text-align: center; }\n\n.navigation-desktop__wrap--black .navigation__link {\n  color: #1e1d1e; }\n  .navigation-desktop__wrap--black .navigation__link:hover {\n    box-shadow: 0px 1px 13px 2px #1e1d1e;\n    color: #ffffff;\n    background-color: rgba(30, 29, 30, 0.9); }\n\n.navigation-desktop__wrap--black .is-active {\n  border-bottom: 1px solid #1e1d1e !important; }\n\n.navigation__link {\n  color: #ffffff;\n  font-family: 'Advent Pro', sans;\n  text-decoration: none;\n  font-weight: 400;\n  font-size: 14px;\n  display: inline-block;\n  background: transparent;\n  border: none;\n  outline: none;\n  cursor: pointer; }\n\n.navigation-desktop__link {\n  padding: 0px 10px;\n  transition: all 0.4s ease-in-out; }\n  .navigation-desktop__link:hover {\n    box-shadow: 0px 1px 13px -4px #ffffff; }\n\n.navigation-desktop__link--animate {\n  -webkit-transform: translate(0, -300px);\n          transform: translate(0, -300px); }\n  .navigation-desktop__link--animate:nth-child(1) {\n    -webkit-animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 1.14s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-desktop__link--animate:nth-child(2) {\n    -webkit-animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 2.28s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-desktop__link--animate:nth-child(3) {\n    -webkit-animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: trans-txt 3.42s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n.no-opacity {\n  opacity: 0; }\n\n.navigation-mobile__link {\n  width: 100%;\n  margin-bottom: 20px;\n  opacity: 0; }\n  .navigation-mobile__link:nth-child(1) {\n    -webkit-animation: opacity-txt 3.8s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 3.8s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-mobile__link:nth-child(2) {\n    -webkit-animation: opacity-txt 7.6s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 7.6s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n  .navigation-mobile__link:nth-child(3) {\n    -webkit-animation: opacity-txt 11.4s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1);\n            animation: opacity-txt 11.4s 4s 1 forwards cubic-bezier(0, 1, 0.8, 1); }\n\n[class^=\"icon-\"]:before, [class*=\" icon-\"]:before {\n  display: block;\n  font-size: 24px; }\n\n.content-button {\n  width: 100%; }\n\n.is-active-mobile .content-button {\n  width: 100%;\n  box-shadow: 3px 3px 2px -1px #941717; }\n\n@-webkit-keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes trans-txt {\n  0% {\n    -webkit-transform: translate(0, -300px);\n            transform: translate(0, -300px);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@-webkit-keyframes opacity-txt {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes opacity-txt {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n", ""]);
 
 // exports
 
@@ -613,6 +667,7 @@ module.exports = module.exports.toString();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_device_info_service__ = __webpack_require__("../../../../../src/app/core/services/device-info.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -624,10 +679,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var NavComponent = (function () {
-    function NavComponent(router) {
+    function NavComponent(router, deviceInfo) {
         var _this = this;
         this.router = router;
+        this.deviceInfo = deviceInfo;
         this.opacity = true;
         this.router.events.subscribe(function (val) {
             if (val instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* NavigationEnd */]) {
@@ -651,8 +708,7 @@ var NavComponent = (function () {
         setTimeout(function () {
             _this.animate = true;
         }, 3300);
-    };
-    NavComponent.prototype.ngAfterViewInit = function () {
+        this.desktop = this.deviceInfo.deviceDesktop();
     };
     NavComponent.prototype.goTo = function (path) {
         this.router.navigate([path]);
@@ -663,7 +719,7 @@ var NavComponent = (function () {
             template: __webpack_require__("../../../../../src/app/shared/nav/nav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/shared/nav/nav.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_2__core_services_device_info_service__["a" /* DeviceInfoService */]])
     ], NavComponent);
     return NavComponent;
 }());
@@ -779,7 +835,7 @@ var SharedModule = (function () {
 /***/ "../../../../../src/app/shared/social-link/social-link.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n      <div class=\"contacts\">\n        <div class=\"contacts-wrap\">\n          <p class=\"contacts-title\">Contacts:</p>\n          <ul class=\"link-wrap\">\n            <li class=\"link-wrap__item link-wrap__item--first\">\n              <a href=\"https://github.com/konstantine811\" target=\"content\" class=\"link-wrap__inner\">\n                <div class=\"link-image\">\n                  <img src=\"./assets/img/link/github.png\" alt=\"\" class=\"link-image__inner link-image__inner--first\">\n                </div>\n                <span class=\"link-text\">My Github</span>\n              </a>\n            </li>\n            <li class=\"link-wrap__item link-wrap__item--second\">\n                <a href=\"https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%B0%D0%B1%D1%80%D0%B0%D0%BC%D0%BA%D0%B8%D0%BD-959584142/\" target=\"content\" class=\"link-wrap__inner\">\n                  <div class=\"link-image\">\n                    <img src=\"./assets/img/link/linkedin.png\" alt=\"\" class=\"link-image__inner link-image__inner--second\">\n                  </div>\n                  <span class=\"link-text\">Linkedin</span>\n                </a>\n              </li>\n              <li class=\"link-wrap__item link-wrap__item--third\">\n                  <a href=\"https://www.facebook.com/constaine.abrams\" target=\"content\" class=\"link-wrap__inner\">\n                    <div class=\"link-image\">\n                      <img src=\"./assets/img/link/facebook.jpg\" alt=\"\" class=\"link-image__inner link-image__inner--third\">\n                    </div>\n                    <span class=\"link-text\">Facebook</span>\n                  </a>\n                </li>\n          </ul>\n        </div>\n      </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <app-nav *ngIf=\"!device\"></app-nav>\n      <div class=\"contacts\">\n        <div class=\"contacts-wrap\">\n          <p class=\"contacts-title\">Contacts:</p>\n          <ul class=\"link-wrap\">\n            <li class=\"link-wrap__item link-wrap__item--first\">\n              <a href=\"https://github.com/konstantine811\" target=\"content\" class=\"link-wrap__inner\">\n                <div class=\"link-image\">\n                  <img src=\"./assets/img/link/github.png\" alt=\"\" class=\"link-image__inner link-image__inner--first\">\n                </div>\n                <span class=\"link-text\">My Github</span>\n              </a>\n            </li>\n            <li class=\"link-wrap__item link-wrap__item--second\">\n                <a href=\"https://www.linkedin.com/in/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD-%D0%B0%D0%B1%D1%80%D0%B0%D0%BC%D0%BA%D0%B8%D0%BD-959584142/\" target=\"content\" class=\"link-wrap__inner\">\n                  <div class=\"link-image\">\n                    <img src=\"./assets/img/link/linkedin.png\" alt=\"\" class=\"link-image__inner link-image__inner--second\">\n                  </div>\n                  <span class=\"link-text\">Linkedin</span>\n                </a>\n              </li>\n              <li class=\"link-wrap__item link-wrap__item--third\">\n                  <a href=\"https://www.facebook.com/constaine.abrams\" target=\"content\" class=\"link-wrap__inner\">\n                    <div class=\"link-image\">\n                      <img src=\"./assets/img/link/facebook.jpg\" alt=\"\" class=\"link-image__inner link-image__inner--third\">\n                    </div>\n                    <span class=\"link-text\">Facebook</span>\n                  </a>\n                </li>\n          </ul>\n        </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -807,6 +863,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocialLinkComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__ = __webpack_require__("../../../../../src/app/core/services/device-info.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -817,8 +874,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SocialLinkComponent = (function () {
-    function SocialLinkComponent() {
+    function SocialLinkComponent(deviceInfo) {
+        this.deviceInfo = deviceInfo;
         this.fadeInAnimation = false;
     }
     SocialLinkComponent.prototype.ngOnInit = function () {
@@ -826,24 +885,26 @@ var SocialLinkComponent = (function () {
         setTimeout(function () {
             _this.fadeInAnimation = true;
         }, 500);
+        this.device = this.deviceInfo.deviceDesktop();
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* HostBinding */])('attr.scroll-attr')
         // @HostBinding('class.content-link')
         ,
-        __metadata("design:type", Boolean)
+        __metadata("design:type", Object)
     ], SocialLinkComponent.prototype, "fadeInAnimation", void 0);
     SocialLinkComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-social-link',
             template: __webpack_require__("../../../../../src/app/shared/social-link/social-link.component.html"),
             styles: [__webpack_require__("../../../../../src/app/shared/social-link/social-link.component.scss")],
+            // tslint:disable-next-line:use-host-property-decorator
             host: {
                 '[class.content-link]': 'true',
                 '[class.content-link-animation]': 'fadeInAnimation'
             }
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__["a" /* DeviceInfoService */]])
     ], SocialLinkComponent);
     return SocialLinkComponent;
 }());
@@ -855,7 +916,7 @@ var SocialLinkComponent = (function () {
 /***/ "../../../../../src/app/skills/skills.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" scroll-attr>\n    <app-social-link></app-social-link>\n    <div class=\"row\">\n        <app-nav></app-nav>\n    </div>\n    <div class=\"row\">\n        <div class=\"column\">\n            <app-progress-bar></app-progress-bar>\n        </div>\n        <div class=\"column\">\n            <div class=\"container-skills\">\n                <div class=\"skills-txt on-scroll-text-white\">\n                    <p class=\"skills-txt__inner\">\n                        My web development experience is 1+ years. \n                        I have the knowledge and practical experience of HTML5 and the Jade, HandleBars re-processors.  \n                        CSS3 and re-processors Sass (Scss), Styles and Less.  \n                        And also I use Bootstrap, Semantic UI frameworks.  \n                        The code is written according to the rules of BEM.  \n                        Experience in designing design sites using such products from Adobe as: Photshop and Illustrator.  \n                        Practical experience and application of various specialties using SVG image format.  \n                        Javascrit (ES5, ES6, TypeScript) and the JQuery library.  \n                        Build a project using Gulp or Webpack.  The Angular2 + framework.  \n                        Writing a backend service using NodeJs as well as the Express framework.\n                    </p>\n                </div>  \n            </div>\n        </div>\n        <div class=\"skills-black-box\">\n            <div class=\"skills-black-box__inner\"></div>\n        </div> \n    </div>\n</div>\n"
+module.exports = "<div class=\"container\" scroll-attr>\n    <app-social-link></app-social-link>\n    <div class=\"row\">\n        <app-nav *ngIf=\"device\"></app-nav>\n    </div>\n    <div class=\"row\">\n        <div class=\"column\">\n            <app-progress-bar></app-progress-bar>\n        </div>\n        <div class=\"column\">\n            <div class=\"container-skills\">\n                <div class=\"skills-txt on-scroll-text-white\">\n                    <p class=\"skills-txt__inner\">\n                        My web development experience is 1+ years. \n                        I have the knowledge and practical experience of HTML5 and the Jade, HandleBars re-processors.  \n                        CSS3 and re-processors Sass (Scss), Styles and Less.  \n                        And also I use Bootstrap, Semantic UI frameworks.  \n                        The code is written according to the rules of BEM.  \n                        Experience in designing design sites using such products from Adobe as: Photshop and Illustrator.  \n                        Practical experience and application of various specialties using SVG image format.  \n                        Javascrit (ES5, ES6, TypeScript) and the JQuery library.  \n                        Build a project using Gulp or Webpack.  The Angular2 + framework.  \n                        Writing a backend service using NodeJs as well as the Express framework.\n                    </p>\n                </div>  \n            </div>\n        </div>\n        <div class=\"skills-black-box\">\n            <div class=\"skills-black-box__inner\"></div>\n        </div> \n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -867,7 +928,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation {\n    margin-right: 50px; } }\n\n:host {\n  display: block;\n  width: 100%;\n  height: 100%; }\n\n.skills-txt__inner {\n  text-align: left;\n  width: 80%;\n  max-width: 500px;\n  margin-top: 84px;\n  color: #ffffff;\n  z-index: 10;\n  position: relative;\n  right: 6.7vw; }\n\n.skills-black-box {\n  position: absolute;\n  z-index: 1;\n  right: 51vw;\n  top: 87px; }\n\n.skills-black-box__inner {\n  width: 0;\n  height: 400px;\n  max-width: 669px;\n  background-color: #1e1d1e;\n  position: absolute;\n  border-radius: 8px;\n  box-shadow: 4px 8px 23px 0px #1e1d1e;\n  -webkit-animation: animation-black-skills 2.5s 4s 1 forwards cubic-bezier(0.74, 0.34, 0, 1.16);\n          animation: animation-black-skills 2.5s 4s 1 forwards cubic-bezier(0.74, 0.34, 0, 1.16); }\n\n@-webkit-keyframes animation-black-skills {\n  0% {\n    width: 0; }\n  100% {\n    width: 42vw; } }\n\n@keyframes animation-black-skills {\n  0% {\n    width: 0; }\n  100% {\n    width: 42vw; } }\n", ""]);
+exports.push([module.i, "@media only screen and (max-height: 800px) {\n  :host .container-box__content {\n    width: 90vw;\n    height: 90vh;\n    top: 5vh;\n    left: 5vw; }\n  :host .skills-black-box {\n    right: 55vw; } }\n\n@media only screen and (max-width: 992px) {\n  :host .column-tablet-12 {\n    width: 100%; }\n  :host .navigation-desktop {\n    margin-right: 50px; } }\n\n:host {\n  display: block;\n  width: 100%;\n  height: 100%; }\n\n.skills-txt__inner {\n  text-align: left;\n  width: 80%;\n  max-width: 500px;\n  margin-top: 84px;\n  color: #ffffff;\n  z-index: 10;\n  position: relative;\n  right: 6.7vw; }\n\n.skills-black-box {\n  position: absolute;\n  z-index: 1;\n  right: 51vw;\n  top: 87px; }\n\n.skills-black-box__inner {\n  width: 0;\n  height: 400px;\n  max-width: 669px;\n  background-color: #1e1d1e;\n  position: absolute;\n  border-radius: 8px;\n  box-shadow: 4px 8px 23px 0px #1e1d1e;\n  -webkit-animation: animation-black-skills 2.5s 4s 1 forwards cubic-bezier(0.74, 0.34, 0, 1.16);\n          animation: animation-black-skills 2.5s 4s 1 forwards cubic-bezier(0.74, 0.34, 0, 1.16); }\n\n@-webkit-keyframes animation-black-skills {\n  0% {\n    width: 0; }\n  100% {\n    width: 42vw; } }\n\n@keyframes animation-black-skills {\n  0% {\n    width: 0; }\n  100% {\n    width: 42vw; } }\n", ""]);
 
 // exports
 
@@ -883,6 +944,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SkillsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__ = __webpack_require__("../../../../../src/app/core/services/device-info.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -893,10 +955,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SkillsComponent = (function () {
-    function SkillsComponent() {
+    function SkillsComponent(deviceInfo) {
+        this.deviceInfo = deviceInfo;
     }
     SkillsComponent.prototype.ngOnInit = function () {
+        this.device = this.deviceInfo.deviceDesktop();
     };
     SkillsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -904,7 +969,7 @@ var SkillsComponent = (function () {
             template: __webpack_require__("../../../../../src/app/skills/skills.component.html"),
             styles: [__webpack_require__("../../../../../src/app/skills/skills.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_device_info_service__["a" /* DeviceInfoService */]])
     ], SkillsComponent);
     return SkillsComponent;
 }());

@@ -1,17 +1,19 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { DeviceInfoService } from '../../core/services/device-info.service';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent implements OnInit, AfterViewInit {
+export class NavComponent implements OnInit {
   public color: boolean;
   public animate: boolean;
-  public opacity: boolean = true;
+  public opacity = true;
+  public desktop: boolean;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private deviceInfo: DeviceInfoService) {
       this.router.events.subscribe((val) => {
         if (val instanceof NavigationEnd) {
           switch (val.url) {
@@ -26,7 +28,6 @@ export class NavComponent implements OnInit, AfterViewInit {
               break;
           }
         }
-        
     });
    }
 
@@ -35,10 +36,7 @@ export class NavComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.animate = true;
     }, 3300);
-    
-  }
-  ngAfterViewInit() {
-
+    this.desktop = this.deviceInfo.deviceDesktop();
   }
 
   goTo(path) {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DeviceInfoService } from '../core/services/device-info.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
+  private device: boolean;
 
-  constructor() { }
+  constructor(private deviceInfo: DeviceInfoService) { }
 
   ngOnInit() {
+    this.device = this.deviceInfo.deviceDesktop();
   }
 
 }

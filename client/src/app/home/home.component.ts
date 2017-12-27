@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DeviceInfoService } from '../core/services/device-info.service';
 
 @Component({
   selector: 'app-home',
@@ -6,14 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public fadeInAnimation: boolean = false;
-  constructor() { 
+  public desktop: boolean;
+
+  public fadeInAnimation = false;
+  constructor(private deviceInfo: DeviceInfoService) {
   }
 
   ngOnInit() {
-    setTimeout(()=> {
+    setTimeout(() => {
       this.fadeInAnimation = true;
     }, 500);
+   this.desktop = this.deviceInfo.deviceDesktop();
   }
+
 
 }

@@ -1,7 +1,7 @@
 <div class="container" scroll-attr>
     <app-social-link></app-social-link>
     <div class="row row-right">
-        <app-nav></app-nav>
+        <app-nav *ngIf="device"></app-nav>
     </div>
     <div class="row">
         <div class="container-portfolio">

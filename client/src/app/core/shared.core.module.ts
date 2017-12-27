@@ -2,6 +2,8 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PaAttrDirective } from './directives/attr.directives';
 
+import { DeviceInfoService } from './services/device-info.service';
+
 @NgModule({
   imports: [
     CommonModule
@@ -9,6 +11,7 @@ import { PaAttrDirective } from './directives/attr.directives';
   declarations: [
     PaAttrDirective
   ],
+  providers: [ DeviceInfoService ],
   exports: [
     PaAttrDirective
   ]
