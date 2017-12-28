@@ -1,8 +1,11 @@
 @import '../../../assets/style/_var';
+@import './social-link.component.responsive';
 
 :host {
     width: 100%;
+    min-width: 60px;
     height: 90%;
+    min-height: 500px;
     background-color: $black_2;
     position: absolute;
     transform: translate(-100%, 0);
@@ -79,7 +82,6 @@
 .link-text {
     font-size: 12px;
 }
-
   //keyframes animation
   @keyframes content-link-black {
     0% {
@@ -88,6 +90,7 @@
     }
     50% {
         width: 80%;
+        transform: translate(-20%, 0);
     }
     100% {
         right: 0;

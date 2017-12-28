@@ -1,13 +1,13 @@
 <div class="container" scroll-attr>
     <app-social-link></app-social-link>
     <div class="row">
-        <app-nav *ngIf="device"></app-nav>
+        <app-nav class="on-desktop"></app-nav>
     </div>
     <div class="row">
-        <div class="column">
+        <div class="col-md-6 col-sm-12 col-xs-12">
             <app-progress-bar></app-progress-bar>
         </div>
-        <div class="column">
+        <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="container-skills">
                 <div class="skills-txt on-scroll-text-white">
                     <p class="skills-txt__inner">
@@ -25,7 +25,7 @@
                 </div>  
             </div>
         </div>
-        <div class="skills-black-box">
+        <div class="skills-black-box on-desktop">
             <div class="skills-black-box__inner"></div>
         </div> 
     </div>

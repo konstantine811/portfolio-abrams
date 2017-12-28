@@ -90,12 +90,17 @@
 
 .content-button {
     width: 100%;
+    box-shadow: 2px 4px 3px #404040, inset -1px -1px 5px #7b7b7b;
+    padding: 7px 0px;
+    border-radius: 2px;
 }
 
 .is-active-mobile {
     .content-button {
         width: 100%;
-        box-shadow: 3px 3px 2px -1px $red_dark;
+        box-shadow: none;
+        padding: 7px 0px;
+        border-radius: 2px;
     }
 }
 

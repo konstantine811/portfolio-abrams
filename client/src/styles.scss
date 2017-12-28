@@ -29,6 +29,10 @@ body {
   z-index: 100;
 }
 
+.on-mobile {
+  display: none;
+}
+
 .on-animation-scorll {
     transition: all 1s ease-in-out;
     .on-scroll-text-black {

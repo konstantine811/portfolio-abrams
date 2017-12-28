@@ -1,0 +1,21 @@
+@media only screen and (max-width: $breakpoint-tablet-width) {
+    :host {
+       .skills-txt {
+            background-color: $black_1;
+            border-radius: 8px;
+            box-shadow: 4px 8px 23px 0px $black_1;
+            width: 80%;
+            transform: translate( -200% , 0);
+            animation: animation-txt-responsive 2.5s 3.3s 1 forwards cubic-bezier(0.74, 0.34, 0, 1.16);
+       }
+       .skills-txt__inner {
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 0;
+            right: 0;
+            padding: 15px 15px;
+            font-size: 19px;
+        }
+    }
+}

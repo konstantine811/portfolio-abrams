@@ -1,4 +1,5 @@
 @import '../../assets/style/_var';
+@import './skills.component.responsive';
 @import '../../assets/style/responsive/_responsive';
 
 :host {
@@ -43,5 +44,15 @@
     }
     100% {
         width: 42vw;
+    }
+} 
+
+//keyframes responsive animation
+@keyframes animation-txt-responsive {
+    0% {
+       transform: translate( -200% ,0);
+    }
+    100% {
+        transform: translate(0% ,0);
     }
 } 

@@ -14,12 +14,24 @@
 
 @media only screen and (max-width: $breakpoint-tablet-width) {
     :host {
+        .container-box__content {
+            overflow-y: scroll;
+            height: auto;
+
+        }
         .column-tablet-12 {
             width: 100%;
         }
 
         .navigation-desktop {
             margin-right: 50px;
+        }
+
+        .on-mobile {
+            display: block;
+        }
+        .on-desktop {
+            display: none;
         }
     }
 }

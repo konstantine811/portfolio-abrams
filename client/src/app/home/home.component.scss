@@ -6,6 +6,7 @@
   position: fixed;
   width: inherit;
   height: inherit;
+  display: block;
   overflow: hidden;
   background-color: $white;
 }
@@ -119,6 +120,7 @@
   text-align: center;
   font-size: 35px;
   margin: 0 auto;
+  opacity: 0;
   transform: translate(0, -250%) rotateX(-90deg);
 }
 
@@ -143,11 +145,17 @@
   0% {
       transform: translate(-250%, 0);
   }
-  50% {
-      transform: translate(-90%, 0);
+  60% {
+      transform: translate(-55%, 0);
   }
-  74% {
-      transform: translate(-7%, 0);
+  70% {
+      transform: translate(-29%, 0);
+  }
+  80% {
+      transform: translate(-17%, 0);
+  }
+  90% {
+      transform: translate(-11%, 0);
   }
   100% {
       transform: translate(0%, 0%);
@@ -170,12 +178,14 @@
 
 @keyframes content-txt-bottom {
   0% {
+      opacity: 0;
       transform: translate(0, -250%) rotateX(-90deg);
   }
   1% {
     transform: translate(0, -150%) rotateX(-90deg);
   }
   100% {
+    opacity: 1;
     transform: translate(0, 0) rotateX(0deg);
   
   }

@@ -28,7 +28,6 @@ export class NavComponent implements OnInit {
             this.colorNav = true;
             break;
           case '/portfolio':
-            console.log('portfolio');
             this.colorNav = true;
             break;
           case '/home':

@@ -10,13 +10,40 @@
 
 @media only screen and (max-width: $breakpoint-tablet-width) {
     :host {
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+        height: 100% !important;
+        position: relative !important;
         .about-txt__inner {
             width: 83%;
             margin-left: 44px;
+            margin-top: 99px;
+            padding-right: 25%;
         }
 
         .content-image__inner {
             max-height: 100%;
+            width: 100%;
+            position: relative;
+            top: calc(9vw - 20px);
+        }
+        .content-header {
+            height: auto;
+        }
+
+        .content-bottom {
+            height: auto;
+        }
+        .content-bottom-txt {
+            height: 100%;
+            overflow: visible;
+        }
+        .bottom-txt {
+            height: auto;
+            overflow: visible;
+        }
+        .bottom-txt__inner {
+            font-size: 26px;
         }
     }
 }

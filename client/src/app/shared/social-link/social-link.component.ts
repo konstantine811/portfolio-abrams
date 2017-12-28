@@ -1,5 +1,4 @@
 import { Component, OnInit, HostBinding, Input } from '@angular/core';
-import { DeviceInfoService } from '../../core/services/device-info.service';
 
 
 @Component({
@@ -14,20 +13,17 @@ import { DeviceInfoService } from '../../core/services/device-info.service';
 })
 export class SocialLinkComponent implements OnInit {
 
-  private device: boolean;
-
   @HostBinding('attr.scroll-attr')
   // @HostBinding('class.content-link')
   public fadeInAnimation = false;
 
-  constructor(private deviceInfo: DeviceInfoService) {
+  constructor() {
   }
 
   ngOnInit() {
     setTimeout(() => {
       this.fadeInAnimation = true;
     }, 500);
-    this.device = this.deviceInfo.deviceDesktop();
   }
 
 }
