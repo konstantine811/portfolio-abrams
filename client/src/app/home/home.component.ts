@@ -18,6 +18,6 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       this.fadeInAnimationAboutText = true;
-    }, 5500);
+    }, 2500);
   }
 }

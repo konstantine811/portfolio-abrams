@@ -1,7 +1,9 @@
 @media only screen and (max-width: $breakpoint-tablet-width) {
     :host {
         height: 100vh !important;
-
+        .container-portfolio {
+            padding-top: 42px;
+        }
         .container-portfolio__wrap {
             padding: 0 84px 0px 0px;
         }

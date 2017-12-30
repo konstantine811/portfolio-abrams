@@ -56,3 +56,11 @@
         }
     }
 } 
+
+@media only screen and (max-width: $breakpoint-mobile-width) {
+    :host {
+        .about-txt__inner--animation {
+            animation: content-txt 1.4s 0.5s 1 forwards cubic-bezier(0, 1, 0.8, 1);
+          }
+    }
+}
