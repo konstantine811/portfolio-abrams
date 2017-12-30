@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding, Input } from '@angular/core';
+import { Component, OnInit, HostBinding, ElementRef, Renderer2 } from '@angular/core';
 
 
 @Component({
@@ -7,8 +7,7 @@ import { Component, OnInit, HostBinding, Input } from '@angular/core';
   styleUrls: ['./social-link.component.scss'],
   // tslint:disable-next-line:use-host-property-decorator
   host: {
-    '[class.content-link]' : 'true',
-    '[class.content-link-animation]' : 'fadeInAnimation'
+    '[class.content-link]' : 'true'
   }
 })
 export class SocialLinkComponent implements OnInit {
@@ -17,13 +16,11 @@ export class SocialLinkComponent implements OnInit {
   // @HostBinding('class.content-link')
   public fadeInAnimation = false;
 
-  constructor() {
+  constructor(private host: ElementRef, private renderer: Renderer2) {
   }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.fadeInAnimation = true;
-    }, 500);
+      this.renderer.setStyle(this.host.nativeElement, 'animation', 'content-link-black 3.5s 1 forwards cubic-bezier(0.4, 0, 0.2, 1)');
   }
 
 }

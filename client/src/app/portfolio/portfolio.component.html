@@ -1,28 +1,51 @@
 <div class="container" scroll-attr>
     <app-social-link></app-social-link>
     <div class="row row-right">
-        <app-nav *ngIf="device"></app-nav>
+        <app-nav class="on-desktop"></app-nav>
     </div>
     <div class="row">
         <div class="container-portfolio">
             <ul class="container-portfolio__wrap">
                 <li class="portfolio-item">
-                    <div class="item-wrap">
-                        <img src="./assets/img/portfolio/black-bird.png" alt="" class="portfolio-item__image">
-                        <div class="page-link">
-                            <a href="https://konstantine811.github.io/fashion/" target="content" class="page-link__inner">link</a>
+                    <div class="popup-wrapper">
+                        <button (click)="popup($event)" class="page-about">About</button>
+                        <div class="about-popup">
+                            <p class="about-popup__txt"><span>One of my first sites, for a brand store.</span>
+                                <span>Technologies used:</span>
+                                <span>-HTML5</span>
+                                <span>-CSS3 (The grid is made with the mixin SASS)</span>
+                                <span>-Javascript(Jquery)</span>
+                            </p>
                         </div>
                     </div>
+                    <a href="https://konstantine811.github.io/fashion/" target="content" class="item-wrap">
+                        <img src="./assets/img/portfolio/black-bird.png" alt="" class="portfolio-item__image">
+                    </a>
                 </li>
                 <li class="portfolio-item">
-                    <div class="item-wrap">
-                        <img src="./assets/img/portfolio/landing-portfolio.png" alt="" class="portfolio-item__image">
-                        <div class="page-link">
-                            <a href="https://konstantine811.github.io/abrams.github.io/" target="content" class="page-link__inner">link</a>
+                    <div class="popup-wrapper">
+                        <button (click)="popup($event)" class="page-about">About</button>
+                        <div class="about-popup">
+                            <p class="about-popup__txt"><span>This is one of my first sites, a simple lending page.</span>
+                                <span>Technologies used:</span>
+                                <span>-HTML5</span>
+                                <span>-CSS3 (bootstrap)</span>
+                                <span>-Javascript(Jquery)</span>
+                            </p>
                         </div>
                     </div>
+                    <a href="https://konstantine811.github.io/abrams.github.io/" target="content" class="item-wrap">
+                        <img src="./assets/img/portfolio/landing-portfolio.png" alt="" class="portfolio-item__image">
+                    </a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="bottom-txt">
+                <div class="bottom-txt__inner">To my regret, here are only one of my first works. Since all other projects are under protection of the company about non-disclosure. In this company, I have been working for almost a year and I certainly have more working projects than indicated here.</div>
+            </div>
         </div>
     </div>
 </div>

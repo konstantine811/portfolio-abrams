@@ -2,7 +2,8 @@
 @import './progress-bar.component.responsive';
 
 :host {
-    width: min-content;
+    width: 63%;
+    max-width: 306px;
     display: block;
 }
 
@@ -13,7 +14,7 @@
 }
 
 .progress-bar {
-    width: 306px;
+    width: 100%;
     height: 11px;
     background-color: $black_2;
     padding: 3px;
@@ -82,7 +83,7 @@
         width: 0px;
     }
     100% {
-        width: 250px;
+        width: 90%;
     }
 }
 
@@ -91,7 +92,7 @@
         width: 0px;
     }
     100% {
-        width: 220px;
+        width: 85%;
     }
 }
 
@@ -100,7 +101,7 @@
         width: 0px;
     }
     100% {
-        width: 180px;
+        width: 75%;
     }
 }
 
@@ -109,7 +110,7 @@
         width: 0px;
     }
     100% {
-        width: 140px;
+        width: 50%;
     }
 }
 
@@ -118,7 +119,7 @@
         width: 0px;
     }
     100% {
-        width: 120px;
+        width: 40%;
     }
 }
 
@@ -127,7 +128,7 @@
         width: 0px;
     }
     100% {
-        width: 160px;
+        width: 50%;
     }
 }
 
@@ -137,7 +138,7 @@
         width: 0px;
     }
     100% {
-        width: 140px;
+        width: 50%;
     }
 }
 

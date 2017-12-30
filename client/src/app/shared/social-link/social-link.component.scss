@@ -13,6 +13,8 @@
     right: 100%;
     z-index: 9;
     transition: height .6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.content-link-animation {
     animation: content-link-black 3.5s 1 forwards cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts {

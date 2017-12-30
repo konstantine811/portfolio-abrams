@@ -1,0 +1,79 @@
+@media only screen and (max-width: $breakpoint-tablet-width) {
+    :host {
+        height: 100vh !important;
+
+        .container-portfolio__wrap {
+            padding: 0 84px 0px 0px;
+        }
+
+        .container-portfolio__wrap {
+            overflow: visible
+        }
+
+        .portfolio-item {
+            overflow: visible;
+            width: 50%;
+            &:hover {
+                .page-about {
+                    display: block;
+                    animation: none;
+                }
+            }
+        }
+
+        .item-wrap {
+            width: 100%;
+            height: 100%;
+        }
+
+        .portfolio-item__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .page-about {
+            transform: translate(0, 0);
+            top: 0;
+            width: 93px;
+            position: relative;
+            z-index: 100;
+            display: inline-block;
+            &:hover + .about-popup {
+                top: -27vw;
+                left: -2px;
+            }
+        }
+
+        .popup-wrapper {
+            display: none;
+            position: absolute;
+            top: 91%;
+        }
+        .about-popup {
+            position: relative;
+            width: 33.3vw;
+            height: 25vw;
+            top: -27vw;
+        }
+        .opened {
+            .about-popup {
+                top: -27vw;
+                left: -2px;
+                &:hover {
+                    box-shadow: 10px 10px 3px -3px $black_1;
+                    top: -27vw;
+                    left: -2px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-mobile-width) {
+    :host {
+        .portfolio-item {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+}

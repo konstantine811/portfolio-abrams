@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public fadeInAnimation = false;
+  public fadeInAnimationAboutText = false;
   constructor() {
   }
 
@@ -14,7 +15,9 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.fadeInAnimation = true;
     }, 500);
+
+    setTimeout(() => {
+      this.fadeInAnimationAboutText = true;
+    }, 5500);
   }
-
-
 }

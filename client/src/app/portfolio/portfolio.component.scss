@@ -1,4 +1,6 @@
 @import '../../assets/style/_var';
+@import '../../assets/style/responsive/_responsive';
+@import './portfolio.component.responsive';
 
 :host {
     display: block;
@@ -20,6 +22,7 @@
 
 .container-portfolio__wrap {
     display: flex;
+    flex-flow: wrap;
     padding: 0 103px 0px 0px;
     margin: 0 auto;
     justify-content: center;
@@ -30,13 +33,15 @@
 .portfolio-item {
     padding: 10px 10px;
     cursor: pointer;
+    width: 35%;
     overflow: hidden;
     z-index: 1000;
     opacity: 0;
     transform: translate(0%, -100%);
     &:hover {
-        .page-link {
-            animation: animation-page-link 0.3s 1 forwards cubic-bezier(1,-0.06, 0, 0.94);
+        .page-about {
+            display: block;
+            animation: animation-about-link 0.3s 1 forwards cubic-bezier(1,-0.06, 0, 0.94);
         }
     }
     @for $i from 1 through 2 {
@@ -47,8 +52,9 @@
 }
 
 .item-wrap {
-    width: 300px;
+    width: 100%;
     height: 100%;
+    display: inline-block;
     position: relative;
     border: solid 2px $black_1;
     transition: all 0.3s ease-in;
@@ -63,30 +69,96 @@
     height: 100%;
 }
 
-.page-link {
+.page-about {
     position: absolute;
-    top: 181px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: $white;
+    top: 174px;
     width: 127px;
     height: 36px;
+    z-index: 3;
+    display: none;
+    font-family: 'Advent Pro', sans;
     background-color: black;
     transform: translate(-200%, 0);
-}
-
-a.page-link__inner {
-    text-decoration: none;
-    color: $white;
-    text-align: center;
-    width: 100%;
-    display: block;
     font-size: 20px;
-    padding-top: 4px;
     transition: text-shadow 0.2s ease-in;
     &:hover {
         text-shadow: 5px 5px 2px $white;
     }
+    &:hover + .about-popup {
+        box-shadow: 10px 10px 3px -3px $black_1;
+        top: 6px;
+        left: 7px;
+    }
 }
 
-@keyframes animation-page-link {
+.popup-wrapper {
+    &:hover + .item-wrap {
+        box-shadow: 10px 10px 3px -3px $black_1;
+        transform: translate(-2px, -4px);
+    }
+}
+
+.about-popup {
+    position: absolute;
+    width: 95%;
+    height: 93%;
+    border: 2px solid black;
+    background: white;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all 0.5s ease;
+}
+
+.opened {
+    .about-popup {
+        display: block !important;
+        animation: popupShow  0.5s 1 forwards ease;
+        box-shadow: none;
+        transition: all 0.3s ease-in;
+        top: 10px;
+        left: 10px;
+        &:hover {
+            box-shadow: 10px 10px 3px -3px $black_1;
+            top: 6px;
+            left: 7px;
+        }
+    }
+}
+
+.bottom-txt {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-txt__inner {
+    width: 70%;
+    margin: 0 auto;
+    padding-right: 9%;
+    margin-top: 50px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    left: 15%;
+    animation: bottom-txt  2s 1s 1 forwards ease-in-out;
+}
+
+.about-popup__txt {
+    padding: 0 17px;
+    font-size: 18px;
+    span {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@keyframes animation-about-link {
     0% {
         transform: translate(-200%, 0);
     }
@@ -106,5 +178,34 @@ a.page-link__inner {
     100% {
         opacity: 1;
         transform: translate(0%, 0%);
+    }
+}
+
+@keyframes popupShow {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, 0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes bottom-txt {
+    0% {
+        color: rgba($white, 0.6);
+        position: absolute;
+        z-index: 1000;
+    }
+    80% {
+        color: rgba($white, 0.6);
+        position: absolute;
+        z-index: 1000;
+    }
+    100% {
+        color: rgba($black_1, 0.7);
+        position: static;
+        z-index: 1;
     }
 }

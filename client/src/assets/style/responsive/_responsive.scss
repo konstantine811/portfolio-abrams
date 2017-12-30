@@ -35,3 +35,13 @@
         }
     }
 }
+
+@media only screen and (max-width: $breakpoint-mobile-width) {
+    :host {
+        .container-box__content {
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}

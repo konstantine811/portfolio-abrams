@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { DeviceInfoService } from '../core/services/device-info.service';
+import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
+import { popupAnimation } from '../core/animations/popup.animations';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,12 +7,25 @@ import { DeviceInfoService } from '../core/services/device-info.service';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  private device: boolean;
+  @ViewChild('popup-wrapper') popupOpen: ElementRef;
 
-  constructor(private deviceInfo: DeviceInfoService) { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
-    this.device = this.deviceInfo.deviceDesktop();
+  }
+  popup(e) {
+    e.preventDefault();
+    const currentContentTxt = e.currentTarget.attributes.class.ownerElement;
+    const elem = e.currentTarget.parentElement;
+    const open = elem.attributes.class.ownerElement.classList.contains('opened');
+    if (!open) {
+      this.renderer.addClass(elem, 'opened');
+      currentContentTxt.innerText = 'Back';
+    } else {
+      this.renderer.removeClass(elem, 'opened');
+      currentContentTxt.innerText = 'About';
+    }
+    console.log(currentContentTxt);
   }
 
 }
